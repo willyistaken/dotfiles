@@ -1,0 +1,14 @@
+
+[window]
+
+opacity = 0.8
+
+padding.x = 20
+padding.y = 20
+
+decorations = "Full"
+decorations_theme_variant = "Dark"
+
+[font]
+size = 15.0
+

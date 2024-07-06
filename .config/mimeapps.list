@@ -1,0 +1,3 @@
+[Added Associations]
+application/pdf=okularApplication_pdf.desktop;org.pwmt.zathura.desktop;mupdf.desktop;
+image/jpeg=firefox.desktop;mpv.desktop;

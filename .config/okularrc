@@ -1,0 +1,16 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Documents/汽車筆試題目.pdf
+Name1[$e]=汽車筆試題目.pdf
+
+[UiSettings]
+ColorScheme=

@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{xeCJK}
+\usepackage{ulem}
+\usepackage{amsmath}
+\normalem
+\renewcommand{\st}[1]{\sout{#1}}
+\setcounter{secnumdepth}{0}%no numbering
+\setlength\parindent{0pt}
+\setCJKmainfont{Noto Serif CJK TC}[ItalicFont={* Black}]
+\setCJKsansfont{Noto Sans CJK TC Light}
+\setCJKmonofont{Noto Sans Mono CJK TC}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+}
+\hypersetup{
+colorlinks=true
+,linkcolor=blue
+,citecolor=blue
+,urlcolor=blue
+,linkbordercolor=blue
+,citebordercolor=blue
+,urlbordercolor=blue
+}
+\makeatletter
+\Hy@AtBeginDocument{%
+  \def\@pdfborder{0 0 1}% Overrides border definition set with colorlinks=true
+  \def\@pdfborderstyle{/S/U/W 1}% Overrides border style set with colorlinks=true
+                                % Hyperlink border style will be underline of width 1pt
+}
+\makeatother
+
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[EL]{\nouppercase\leftmark}
+%\fancyhead[OR]{\nouppercase\rightmark}
+%\fancyhead[ER,OL]{\thepage}
+
+$if(title)$
+\title{$title$}
+$endif$
+
+\begin{document}
+\maketitle
+$body$
+\end{document}
+
