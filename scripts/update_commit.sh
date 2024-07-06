@@ -1,9 +1,6 @@
 #!/usr/bin/zsh
-cd ~/dotfiles
-cp -r ~/.mozilla/firefox/firefoxs.willyprofile .
-tar czf BrowserProfile.tar.gz ~/.mozilla/firefox/firefoxs.willyprofile 
-
-
+cd 	~/dotfiles
 git add .
-git commit -m "update config"
+time=$(date +'%Y/%m/%d:%H:%M')
+git commit -m "$time Update Config"
 git push
