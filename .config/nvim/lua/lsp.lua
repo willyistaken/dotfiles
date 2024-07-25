@@ -16,9 +16,9 @@ require'lspconfig'.pyright.setup{
   }
 }
 require'lspconfig'.bashls.setup{filetypes={ "sh","zsh" }}
-require'lspconfig'.marksman.setup{}
 require'lspconfig'.rust_analyzer.setup{}
 require'lspconfig'.cssls.setup{}
+require'lspconfig'.ltex.setup{}
 
 lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})

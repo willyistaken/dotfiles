@@ -11,9 +11,20 @@ map('i','\'','\'\'<Esc>i')
 map('i','\"','\"\"<Esc>i')
 map('i','{<CR>','{<CR>}<Esc>i')
 
+-- my Y
+map('v','Y','"+y')
+map('n','Y','"+y')
+map('v','D','"+d')
+map('n','D','"+d')
+map('v','C','"+c')
+map('n','C','"+c')
+
 --plugin keybind--
 map('n',' h','<Esc>:Telescope yank_history<CR>')
 map('n',' f','<Esc>:Telescope find_files<CR>')
 map('n',' v','<Esc>:Telescope treesitter<CR>')
 map('n',' d','<Esc>:lua vim.diagnostic.open_float()<Cr>')
 map('n', ' U', vim.cmd.UndotreeToggle)
+
+
+

@@ -10,6 +10,7 @@ set smoothscroll false
 set editorcmd alacritty -e vim
 set theme user
 set homepages ["10.147.17.179"]
+set searchurls {"google":"https://www.google.com/search?q=","duckduckgo":"https://duckduckgo.com/?q="}
 
 " Binds
 unbind <C-a>

@@ -8,7 +8,7 @@ set -u
 
 
 #selection=$(hyprctl clients -j | jq -r '.[] | .workspace.id, .title, .class, .address' | awk '{printf "%s ", $0; getline; printf "%s ", $0; getline; printf "[%s] ", $0; getline; printf " (%s)\n", $0}' | tofi --prompt-text="Windows:")
-inused=$(hyprctl clients -j | jq -r '.[] | .class, .workspace.id, .address' | awk '{printf "inused: "; printf "%s ", $0; getline;printf "[%s]",$0; getline; printf " (%s)\n", $0}')
+inused=$(hyprctl clients -j | jq -r '.[] | .class, .workspace.id, .address' | awk '{printf "*"; printf "%s ", $0; getline;printf "[%s]",$0; getline; printf " (%s)\n", $0}')
 
 apps=$(cat ~/dotfiles/scripts/apps)
 

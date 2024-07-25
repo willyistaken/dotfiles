@@ -1,0 +1,493 @@
+21:42:15.725: Platform: Wayland
+21:42:15.725: CPU Name: AMD Ryzen 5 7640U w/ Radeon 760M Graphics
+21:42:15.725: CPU Speed: 1329.583MHz
+21:42:15.726: Physical Cores: 6, Logical Cores: 12
+21:42:15.726: Physical Memory: 15293MB Total, 8243MB Free
+21:42:15.726: Kernel Version: Linux 6.9.8-arch1-1
+21:42:15.726: Distribution: "Arch Linux" Unknown
+21:42:15.726: Desktop Environment: Hyprland ()
+21:42:15.726: Session Type: wayland
+21:42:15.729: Qt Version: 6.7.2 (runtime), 6.7.1 (compiled)
+21:42:15.729: Portable mode: false
+21:42:15.810: OBS 30.1.2-2 (linux)
+21:42:15.810: ---------------------------------
+21:42:15.811: ---------------------------------
+21:42:15.811: audio settings reset:
+21:42:15.811: 	samples per sec: 48000
+21:42:15.811: 	speakers:        2
+21:42:15.811: 	max buffering:   960 milliseconds
+21:42:15.811: 	buffering type:  dynamically increasing
+21:42:15.814: ---------------------------------
+21:42:15.814: Initializing OpenGL...
+21:42:15.814: Using EGL/Wayland
+21:42:15.879: Initialized EGL 1.5
+21:42:15.910: Loading up OpenGL on adapter AMD AMD Radeon 760M (radeonsi, gfx1103_r1, LLVM 18.1.8, DRM 3.57, 6.9.8-arch1-1)
+21:42:15.910: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 24.1.3-arch1.1, shading language 4.60
+21:42:15.970: ---------------------------------
+21:42:15.970: video settings reset:
+21:42:15.970: 	base resolution:   1410x940
+21:42:15.970: 	output resolution: 1128x752
+21:42:15.970: 	downscale filter:  Bicubic
+21:42:15.970: 	fps:               30/1
+21:42:15.970: 	format:            NV12
+21:42:15.970: 	YUV mode:          Rec. 709/Partial
+21:42:15.971: NV12 texture support enabled
+21:42:15.971: P010 texture support not available
+21:42:15.976: Audio monitoring device:
+21:42:15.976: 	name: Default
+21:42:15.976: 	id: default
+21:42:15.976: ---------------------------------
+21:42:15.992: Failed to load 'en-US' text for module: 'decklink-captions.so'
+21:42:16.006: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+21:42:16.019: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+21:42:16.019: Failed to initialize module 'decklink.so'
+21:42:16.306: [pipewire] Available captures:
+21:42:16.306: [pipewire]     - Desktop capture
+21:42:16.306: [pipewire]     - Window capture
+21:42:16.346: v4l2loopback not installed, virtual camera disabled
+21:42:16.424: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+21:42:16.424: FFmpeg VAAPI H264 encoding not supported
+21:42:16.424: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+21:42:16.424: FFmpeg VAAPI AV1 encoding not supported
+21:42:16.424: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+21:42:16.424: FFmpeg VAAPI HEVC encoding not supported
+21:42:16.598: ---------------------------------
+21:42:16.598:   Loaded Modules:
+21:42:16.598:     text-freetype2.so
+21:42:16.598:     rtmp-services.so
+21:42:16.598:     obs-x264.so
+21:42:16.598:     obs-webrtc.so
+21:42:16.598:     obs-vst.so
+21:42:16.598:     obs-transitions.so
+21:42:16.598:     obs-qsv11.so
+21:42:16.598:     obs-outputs.so
+21:42:16.598:     obs-libfdk.so
+21:42:16.598:     obs-filters.so
+21:42:16.598:     obs-ffmpeg.so
+21:42:16.598:     linux-v4l2.so
+21:42:16.598:     linux-pulseaudio.so
+21:42:16.598:     linux-pipewire.so
+21:42:16.598:     linux-jack.so
+21:42:16.598:     linux-capture.so
+21:42:16.598:     linux-alsa.so
+21:42:16.598:     image-source.so
+21:42:16.598:     frontend-tools.so
+21:42:16.598:     decklink-output-ui.so
+21:42:16.598:     decklink-captions.so
+21:42:16.598: ---------------------------------
+21:42:16.598: ==== Startup complete ===============================================
+21:42:16.647: All scene data cleared
+21:42:16.647: ------------------------------------------------
+21:42:16.655: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.0) 15.0.0'
+21:42:16.655: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+21:42:16.655: pulse-input: Started recording from 'alsa_output.pci-0000_c1_00.6.analog-stereo.monitor' (default)
+21:42:16.655: [Loaded global audio device]: 'Desktop Audio'
+21:42:16.656: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.0) 15.0.0'
+21:42:16.656: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+21:42:16.656: pulse-input: Started recording from 'alsa_input.pci-0000_c1_00.6.analog-stereo' (default)
+21:42:16.656: [Loaded global audio device]: 'Mic/Aux'
+21:42:16.658: Switched to scene 'Scene'
+21:42:16.658: ------------------------------------------------
+21:42:16.658: Loaded scenes:
+21:42:16.658: - scene 'Scene':
+21:42:16.658: ------------------------------------------------
+21:42:17.283: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+21:42:17.283: 
+21:43:30.829: v4l2-input: Start capture from 
+21:43:30.829: v4l2-input: Unable to open device
+21:43:30.829: v4l2-input: Initialization failed, errno: No such file or directory
+21:43:30.835: User added source 'usb camera' (v4l2_input) to scene 'Scene'
+21:43:30.839: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5bcec770
+21:43:30.846: v4l2-input: /dev/video1 seems to not support video capture
+21:43:30.847: v4l2-input: Found device 'USB Video: USB Video' at /dev/video0
+21:43:30.848: v4l2-input: Found input 'Camera 1' (Index 0)
+21:43:30.849: v4l2-input: Pixelformat: Motion-JPEG (available)
+21:43:30.849: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+21:43:30.849: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+21:43:30.849: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+21:43:30.849: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+21:43:30.849: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+21:43:30.849: v4l2-input: Stepwise and Continuous framesizes are currently hardcoded
+21:43:30.850: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+21:43:30.852: v4l2-input: Pixelformat: Motion-JPEG (available)
+21:43:30.852: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+21:43:30.852: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+21:43:30.852: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+21:43:30.852: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+21:43:30.852: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+21:43:30.852: v4l2-input: Stepwise and Continuous framesizes are currently hardcoded
+21:43:30.853: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+21:43:30.855: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+21:43:30.874: v4l2-input: Start capture from /dev/video0
+21:43:30.875: v4l2-input: Input: 0
+21:43:30.879: v4l2-input: Resolution: 1920x1080
+21:43:30.879: v4l2-input: Pixelformat: MJPG
+21:43:30.879: v4l2-input: Linesize: 0 Bytes
+21:43:30.879: v4l2-input: Framerate: 60.00 fps
+21:43:30.883: v4l2-input: /dev/video0: select timeout set to 83333 (5x frame periods)
+21:43:30.995: v4l2-input: /dev/video0: select timed out
+21:43:30.995: v4l2-input: /dev/video0: failed to log status
+21:43:31.010: v4l2-input: decoder: failed to send frame to codec
+21:43:31.010: v4l2-input: failed to unpack jpeg or h264
+21:43:31.010: v4l2-input: /dev/video0: Stopped capture after 1 frames
+21:43:36.092: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5df7c940
+21:44:43.460: v4l2-input: /dev/video1 seems to not support video capture
+21:44:43.461: v4l2-input: Found device 'USB Video: USB Video' at /dev/video0
+21:44:43.462: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+21:44:43.463: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+21:44:43.464: v4l2-input: Pixelformat: Motion-JPEG (available)
+21:44:43.464: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+21:44:43.464: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+21:44:43.464: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+21:44:43.464: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+21:44:43.464: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+21:44:43.465: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+21:44:43.466: v4l2-input: Found input 'Camera 1' (Index 0)
+21:44:43.466: v4l2-input: Pixelformat: Motion-JPEG (available)
+21:44:43.466: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+21:44:43.466: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+21:44:43.466: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+21:44:43.466: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+21:44:43.466: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+21:44:43.467: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+21:45:05.673: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5df36700
+21:45:34.853: v4l2-input: Device /dev/video0 disconnected
+21:45:48.552: v4l2-input: Device /dev/video0 reconnected
+21:45:48.552: v4l2-input: Start capture from /dev/video0
+21:45:48.553: v4l2-input: Input: 0
+21:45:48.559: v4l2-input: Resolution: 1920x1080
+21:45:48.559: v4l2-input: Pixelformat: MJPG
+21:45:48.559: v4l2-input: Linesize: 0 Bytes
+21:45:48.563: v4l2-input: Framerate: 60.00 fps
+21:45:48.566: v4l2-input: /dev/video0: select timeout set to 83333 (5x frame periods)
+21:45:48.681: v4l2-input: /dev/video0: select timed out
+21:45:48.681: v4l2-input: /dev/video0: failed to log status
+21:45:48.690: v4l2-input: decoder: failed to send frame to codec
+21:45:48.690: v4l2-input: failed to unpack jpeg or h264
+21:45:48.690: v4l2-input: /dev/video0: Stopped capture after 1 frames
+21:45:53.714: v4l2-input: /dev/video1 seems to not support video capture
+21:45:53.714: v4l2-input: Found device 'USB Video: USB Video' at /dev/video0
+21:45:53.715: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+21:45:53.716: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+21:45:53.717: v4l2-input: Pixelformat: Motion-JPEG (available)
+21:45:53.717: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+21:45:53.717: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+21:45:53.717: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+21:45:53.717: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+21:45:53.717: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+21:45:53.718: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+21:45:53.719: v4l2-input: Found input 'Camera 1' (Index 0)
+21:45:53.719: v4l2-input: Pixelformat: Motion-JPEG (available)
+21:45:53.719: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+21:45:53.719: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+21:45:53.719: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+21:45:53.719: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+21:45:53.719: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+21:45:53.720: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+21:46:00.664: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5bcde530
+21:46:02.883: User Removed source 'usb camera' (v4l2_input) from scene 'Scene'
+21:46:02.885: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5c265260
+21:46:08.909: obs-data.c: [obs_data_create_from_json] Failed reading json string (1): '[' or '{' expected near end of file
+21:46:08.909: obs-data.c: [obs_data_create_from_json] Failed reading json string (1): '[' or '{' expected near end of file
+21:46:08.913: User added source 'Video Capture Device (PipeWire) (BETA)' (pipewire-camera-source) to scene 'Scene'
+21:46:08.917: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5bcda3f0
+21:46:08.921: [camera-portal] Selected resolution for ''
+21:46:08.921: [camera-portal] Selected format for ''
+21:46:08.921: [camera-portal] selected camera ''
+21:46:11.722: [camera-portal] Successfully accessed cameras
+21:46:11.733: [pipewire] Server version: 1.2.0
+21:46:11.733: [pipewire] Library version: 1.2.0
+21:46:11.733: [pipewire] Header version: 1.0.7
+21:46:11.733: [pipewire] Created registry 0x5fdc5df861e0
+21:46:11.733: [camera-portal] Found device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:11.733: [camera-portal] Selected resolution for ''
+21:46:11.733: [camera-portal] Selected format for ''
+21:46:11.733: [camera-portal] selected camera ''
+21:46:17.079: [camera-portal] Found device v4l2_input.pci-0000_c1_00.4-usb-0_1_1.0
+21:46:17.079: [camera-portal] Selected resolution for ''
+21:46:17.079: [camera-portal] Selected format for ''
+21:46:17.079: [camera-portal] selected camera ''
+21:46:20.475: [camera-portal] selected camera 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:46:20.475: [camera-portal] streaming camera 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:46:20.475: [pipewire] Created stream 0x5fdc5df3cd20
+21:46:20.475: [pipewire] Stream 0x5fdc5df3cd20 state: "connecting" (error: none)
+21:46:20.476: [pipewire] Playing stream 0x5fdc5df3cd20
+21:46:20.476: [camera-portal] Updating pixel formats
+21:46:20.476: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:46:20.476: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+21:46:20.479: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:46:20.482: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:46:20.482: [pipewire] Renegotiating stream
+21:46:20.484: [pipewire] Renegotiating stream
+21:46:20.497: [pipewire] Negotiated format:
+21:46:20.497: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:46:20.497: [pipewire]     Size: 640x480
+21:46:20.497: [pipewire]     Framerate: 5/1
+21:46:20.500: [pipewire] Stream 0x5fdc5df3cd20 state: "streaming" (error: none)
+21:46:20.507: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:27.806: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:46:27.806: [pipewire] Renegotiating stream
+21:46:27.807: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:27.834: [pipewire] Negotiated format:
+21:46:27.834: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:46:27.834: [pipewire]     Size: 1920x1080
+21:46:27.834: [pipewire]     Framerate: 5/1
+21:46:35.043: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:46:35.043: [pipewire] Renegotiating stream
+21:46:35.044: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+21:46:35.051: [pipewire] Negotiated format:
+21:46:35.051: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:46:35.051: [pipewire]     Size: 640x480
+21:46:35.051: [pipewire]     Framerate: 5/1
+21:46:35.058: [pipewire] Negotiated format:
+21:46:35.058: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:46:35.058: [pipewire]     Size: 640x480
+21:46:35.058: [pipewire]     Framerate: 5/1
+21:46:35.060: [pipewire] Stream 0x5fdc5df3cd20 state: "streaming" (error: none)
+21:46:35.074: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:36.469: [camera-portal] selected camera 'v4l2_input.pci-0000_c1_00.4-usb-0_1_1.0'
+21:46:36.469: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+21:46:36.470: [pipewire] Stream 0x5fdc5df3cd20 state: "unconnected" (error: none)
+21:46:36.470: [camera-portal] streaming camera 'v4l2_input.pci-0000_c1_00.4-usb-0_1_1.0'
+21:46:36.470: [pipewire] Created stream 0x5fdc5df3cd20
+21:46:36.470: [pipewire] Stream 0x5fdc5df3cd20 state: "connecting" (error: none)
+21:46:36.470: [pipewire] Playing stream 0x5fdc5df3cd20
+21:46:36.470: [camera-portal] Updating pixel formats
+21:46:36.470: [camera-portal] Selected format for 'v4l2_input.pci-0000_c1_00.4-usb-0_1_1.0'
+21:46:36.474: [camera-portal] Updating device v4l2_input.pci-0000_c1_00.4-usb-0_1_1.0
+21:46:36.502: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+21:46:36.538: [pipewire] Negotiated format:
+21:46:36.538: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:46:36.538: [pipewire]     Size: 1920x1080
+21:46:36.538: [pipewire]     Framerate: 5/1
+21:46:36.556: [pipewire] Stream 0x5fdc5df3cd20 state: "streaming" (error: none)
+21:46:46.800: [camera-portal] selected camera 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:46:46.800: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+21:46:46.801: [pipewire] Stream 0x5fdc5df3cd20 state: "unconnected" (error: none)
+21:46:46.801: [camera-portal] streaming camera 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:46:46.801: [pipewire] Created stream 0x5fdc5df3cd20
+21:46:46.801: [pipewire] Stream 0x5fdc5df3cd20 state: "connecting" (error: none)
+21:46:46.801: [pipewire] Playing stream 0x5fdc5df3cd20
+21:46:46.801: [camera-portal] Updating pixel formats
+21:46:46.801: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:46:46.807: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:46.842: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+21:46:46.860: [pipewire] Negotiated format:
+21:46:46.860: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:46:46.860: [pipewire]     Size: 1920x1080
+21:46:46.861: [pipewire]     Framerate: 5/1
+21:46:46.865: [pipewire] Stream 0x5fdc5df3cd20 state: "streaming" (error: none)
+21:46:50.807: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:53.441: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:54.674: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:54.874: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:55.074: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:55.241: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:55.507: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:55.674: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:55.841: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:56.007: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:56.174: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:56.341: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:56.474: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:56.641: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:56.807: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:56.974: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:57.141: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:57.341: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:57.507: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:57.674: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:57.841: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:58.041: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:58.207: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:58.374: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:58.541: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:58.741: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:58.907: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:59.041: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:59.241: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:59.407: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:46:59.574: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:47:06.469: Last log entry repeated for 20 more lines
+21:47:06.469: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5e0573a0
+21:48:37.873: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:48:37.873: [pipewire] Renegotiating stream
+21:48:37.873: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:48:37.873: [pipewire] Renegotiating stream
+21:48:37.873: [camera-portal] selected camera 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:48:37.873: [camera-portal] Updating pixel formats
+21:48:37.873: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:48:37.914: [pipewire] Negotiated format:
+21:48:37.914: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:48:37.914: [pipewire]     Size: 640x480
+21:48:37.914: [pipewire]     Framerate: 5/1
+21:48:42.506: [pipewire] Renegotiating stream
+21:48:42.506: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+21:48:42.507: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:48:42.512: [pipewire] Negotiated format:
+21:48:42.512: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:48:42.512: [pipewire]     Size: 640x480
+21:48:42.512: [pipewire]     Framerate: 30/1
+21:48:42.520: [pipewire] Negotiated format:
+21:48:42.520: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:48:42.520: [pipewire]     Size: 640x480
+21:48:42.520: [pipewire]     Framerate: 30/1
+21:48:42.521: [pipewire] Stream 0x5fdc5df3cd20 state: "streaming" (error: none)
+21:48:43.898: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5df20df0
+21:48:51.796: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:48:51.796: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:48:51.796: [camera-portal] selected camera 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:48:51.796: [camera-portal] Updating pixel formats
+21:48:51.796: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:48:53.731: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:48:53.731: [pipewire] Renegotiating stream
+21:48:53.741: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:48:53.752: [pipewire] Negotiated format:
+21:48:53.752: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:48:53.752: [pipewire]     Size: 720x480
+21:48:53.752: [pipewire]     Framerate: 30/1
+21:48:55.738: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:48:55.738: [pipewire] Renegotiating stream
+21:48:55.738: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+21:48:55.741: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:48:55.745: [pipewire] Stream 0x5fdc5df3cd20 state: "error" (error: no more input formats)
+21:48:55.745: [pipewire] Error id:5 seq:316 res:-32 (Broken pipe): no more input formats
+21:48:55.746: [pipewire] Renegotiating stream
+21:48:55.752: [pipewire] Negotiated format:
+21:48:55.752: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:48:55.752: [pipewire]     Size: 1024x768
+21:48:55.752: [pipewire]     Framerate: 10/1
+21:48:55.762: [pipewire] Negotiated format:
+21:48:55.762: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:48:55.763: [pipewire]     Size: 1024x768
+21:48:55.763: [pipewire]     Framerate: 10/1
+21:48:55.767: [pipewire] Stream 0x5fdc5df3cd20 state: "streaming" (error: none)
+21:48:55.774: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:49:00.134: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:00.134: [pipewire] Renegotiating stream
+21:49:00.141: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:49:00.141: [pipewire] Stream 0x5fdc5df3cd20 state: "error" (error: no more input formats)
+21:49:00.141: [pipewire] Error id:5 seq:342 res:-32 (Broken pipe): no more input formats
+21:49:00.141: [pipewire] Renegotiating stream
+21:49:00.152: [pipewire] Negotiated format:
+21:49:00.152: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:49:00.152: [pipewire]     Size: 1920x1080
+21:49:00.152: [pipewire]     Framerate: 5/1
+21:49:00.175: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:49:01.565: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5df08860
+21:49:13.517: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:13.517: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:13.517: [camera-portal] selected camera 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:13.517: [camera-portal] Updating pixel formats
+21:49:13.517: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:15.536: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:15.536: [pipewire] Renegotiating stream
+21:49:15.537: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+21:49:15.541: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:49:15.544: [pipewire] Negotiated format:
+21:49:15.544: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:49:15.544: [pipewire]     Size: 640x480
+21:49:15.544: [pipewire]     Framerate: 5/1
+21:49:15.552: [pipewire] Negotiated format:
+21:49:15.552: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:49:15.552: [pipewire]     Size: 640x480
+21:49:15.552: [pipewire]     Framerate: 5/1
+21:49:15.554: [pipewire] Stream 0x5fdc5df3cd20 state: "streaming" (error: none)
+21:49:16.519: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5c329270
+21:49:30.977: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:30.977: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:30.977: [camera-portal] selected camera 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:30.977: [camera-portal] Updating pixel formats
+21:49:30.977: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:33.322: [pipewire] Renegotiating stream
+21:49:33.336: [pipewire] Negotiated format:
+21:49:33.336: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:49:33.336: [pipewire]     Size: 640x480
+21:49:33.336: [pipewire]     Framerate: 30/1
+21:49:33.341: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:49:34.284: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5db49c70
+21:49:43.273: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:43.274: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:43.274: [camera-portal] selected camera 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:43.274: [camera-portal] Updating pixel formats
+21:49:43.274: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:49:44.956: [pipewire] Renegotiating stream
+21:49:44.957: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+21:49:44.963: [pipewire] Negotiated format:
+21:49:44.963: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:49:44.963: [pipewire]     Size: 640x480
+21:49:44.963: [pipewire]     Framerate: 20/1
+21:49:44.971: [pipewire] Negotiated format:
+21:49:44.971: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:49:44.971: [pipewire]     Size: 640x480
+21:49:44.971: [pipewire]     Framerate: 20/1
+21:49:44.972: [pipewire] Stream 0x5fdc5df3cd20 state: "streaming" (error: none)
+21:49:44.974: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:49:45.982: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5e05ecf0
+21:50:38.091: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:50:38.091: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:50:38.091: [camera-portal] selected camera 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:50:38.091: [camera-portal] Updating pixel formats
+21:50:38.091: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:50:42.694: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:50:42.694: [pipewire] Renegotiating stream
+21:50:42.700: [pipewire] Renegotiating stream
+21:50:42.707: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:50:42.711: [pipewire] Negotiated format:
+21:50:42.711: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:50:42.711: [pipewire]     Size: 1280x720
+21:50:42.711: [pipewire]     Framerate: 10/1
+21:50:42.711: [pipewire] Stream 0x5fdc5df3cd20 state: "error" (error: no more input formats)
+21:50:42.711: [pipewire] Error id:5 seq:419 res:-32 (Broken pipe): no more input formats
+21:50:44.363: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5bccfea0
+21:50:48.058: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:50:48.058: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:50:48.058: [camera-portal] selected camera 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:50:48.058: [camera-portal] Updating pixel formats
+21:50:48.058: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:50:53.678: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:50:53.679: [pipewire] Renegotiating stream
+21:50:53.679: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+21:50:53.686: [pipewire] Negotiated format:
+21:50:53.686: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:50:53.686: [pipewire]     Size: 1024x768
+21:50:53.686: [pipewire]     Framerate: 10/1
+21:50:53.695: [pipewire] Negotiated format:
+21:50:53.695: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:50:53.695: [pipewire]     Size: 1024x768
+21:50:53.695: [pipewire]     Framerate: 10/1
+21:50:53.697: [pipewire] Stream 0x5fdc5df3cd20 state: "streaming" (error: none)
+21:50:53.707: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:50:54.826: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5bce9950
+21:51:16.665: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:51:16.665: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:51:16.665: [camera-portal] selected camera 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:51:16.665: [camera-portal] Updating pixel formats
+21:51:16.665: [camera-portal] Selected format for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:51:21.825: [camera-portal] Selected resolution for 'v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0'
+21:51:21.825: [pipewire] Renegotiating stream
+21:51:21.841: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:51:21.848: [pipewire] Negotiated format:
+21:51:21.848: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:51:21.848: [pipewire]     Size: 800x600
+21:51:21.848: [pipewire]     Framerate: 10/1
+21:51:23.914: [pipewire] Renegotiating stream
+21:51:23.915: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+21:51:23.921: [pipewire] Negotiated format:
+21:51:23.921: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:51:23.921: [pipewire]     Size: 800x600
+21:51:23.921: [pipewire]     Framerate: 20/1
+21:51:23.930: [pipewire] Negotiated format:
+21:51:23.930: [pipewire]     Format: 4 (Spa:Enum:VideoFormat:YUY2)
+21:51:23.930: [pipewire]     Size: 800x600
+21:51:23.930: [pipewire]     Framerate: 20/1
+21:51:23.931: [pipewire] Stream 0x5fdc5df3cd20 state: "streaming" (error: none)
+21:51:23.941: [camera-portal] Updating device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+21:51:25.480: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x5fdc5bccb050
+22:21:34.058: [pipewire] Stream 0x5fdc5df3cd20 state: "paused" (error: none)
+22:21:34.059: [pipewire-camera] Removed device v4l2_input.pci-0000_c3_00.3-usb-0_1.1_1.0
+22:21:34.078: [pipewire] Stream 0x5fdc5df3cd20 state: "error" (error: no more input formats)
+22:21:34.078: [pipewire] Error id:5 seq:495 res:-32 (Broken pipe): no more input formats
+22:25:32.547: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+22:25:32.547: 
+22:40:41.548: ==== Shutting down ==================================================

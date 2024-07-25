@@ -1,0 +1,93 @@
+14:39:09.090: Platform: Wayland
+14:39:09.090: CPU Name: AMD Ryzen 5 7640U w/ Radeon 760M Graphics
+14:39:09.090: CPU Speed: 4691.545MHz
+14:39:09.091: Physical Cores: 6, Logical Cores: 12
+14:39:09.091: Physical Memory: 15293MB Total, 8030MB Free
+14:39:09.091: Kernel Version: Linux 6.9.8-arch1-1
+14:39:09.091: Distribution: "Arch Linux" Unknown
+14:39:09.091: Desktop Environment: Hyprland ()
+14:39:09.091: Session Type: wayland
+14:39:09.092: Qt Version: 6.7.2 (runtime), 6.7.1 (compiled)
+14:39:09.092: Portable mode: false
+14:39:09.129: OBS 30.1.2-2 (linux)
+14:39:09.129: ---------------------------------
+14:39:09.130: ---------------------------------
+14:39:09.130: audio settings reset:
+14:39:09.130: 	samples per sec: 48000
+14:39:09.130: 	speakers:        2
+14:39:09.130: 	max buffering:   960 milliseconds
+14:39:09.130: 	buffering type:  dynamically increasing
+14:39:09.131: ---------------------------------
+14:39:09.131: Initializing OpenGL...
+14:39:09.131: Using EGL/Wayland
+14:39:09.164: Initialized EGL 1.5
+14:39:09.175: Loading up OpenGL on adapter AMD AMD Radeon 760M (radeonsi, gfx1103_r1, LLVM 18.1.8, DRM 3.57, 6.9.8-arch1-1)
+14:39:09.175: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 24.1.3-arch1.1, shading language 4.60
+14:39:09.259: ---------------------------------
+14:39:09.259: video settings reset:
+14:39:09.259: 	base resolution:   1920x1080
+14:39:09.259: 	output resolution: 1280x720
+14:39:09.259: 	downscale filter:  Bicubic
+14:39:09.259: 	fps:               30/1
+14:39:09.259: 	format:            NV12
+14:39:09.259: 	YUV mode:          Rec. 709/Partial
+14:39:09.259: NV12 texture support enabled
+14:39:09.259: P010 texture support not available
+14:39:09.264: Audio monitoring device:
+14:39:09.264: 	name: Default
+14:39:09.264: 	id: default
+14:39:09.264: ---------------------------------
+14:39:09.272: Failed to load 'en-US' text for module: 'decklink-captions.so'
+14:39:09.280: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+14:39:09.285: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+14:39:09.285: Failed to initialize module 'decklink.so'
+14:39:09.397: [pipewire] Available captures:
+14:39:09.397: [pipewire]     - Desktop capture
+14:39:09.397: [pipewire]     - Window capture
+14:39:09.417: v4l2loopback not installed, virtual camera disabled
+14:39:09.461: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+14:39:09.461: FFmpeg VAAPI H264 encoding not supported
+14:39:09.461: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+14:39:09.461: FFmpeg VAAPI AV1 encoding not supported
+14:39:09.461: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+14:39:09.461: FFmpeg VAAPI HEVC encoding not supported
+14:39:09.536: ---------------------------------
+14:39:09.536:   Loaded Modules:
+14:39:09.536:     text-freetype2.so
+14:39:09.536:     rtmp-services.so
+14:39:09.536:     obs-x264.so
+14:39:09.536:     obs-webrtc.so
+14:39:09.536:     obs-vst.so
+14:39:09.536:     obs-transitions.so
+14:39:09.536:     obs-qsv11.so
+14:39:09.536:     obs-outputs.so
+14:39:09.536:     obs-libfdk.so
+14:39:09.536:     obs-filters.so
+14:39:09.536:     obs-ffmpeg.so
+14:39:09.536:     linux-v4l2.so
+14:39:09.536:     linux-pulseaudio.so
+14:39:09.536:     linux-pipewire.so
+14:39:09.536:     linux-jack.so
+14:39:09.536:     linux-capture.so
+14:39:09.536:     linux-alsa.so
+14:39:09.536:     image-source.so
+14:39:09.536:     frontend-tools.so
+14:39:09.536:     decklink-output-ui.so
+14:39:09.536:     decklink-captions.so
+14:39:09.536: ---------------------------------
+14:39:09.536: ==== Startup complete ===============================================
+14:39:09.540: No scene file found, creating default scene
+14:39:09.582: All scene data cleared
+14:39:09.582: ------------------------------------------------
+14:39:09.597: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.0) 15.0.0'
+14:39:09.598: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+14:39:09.598: pulse-input: Started recording from 'alsa_output.pci-0000_c1_00.6.analog-stereo.monitor' (default)
+14:39:09.598: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.0) 15.0.0'
+14:39:09.598: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+14:39:09.598: pulse-input: Started recording from 'alsa_input.pci-0000_c1_00.6.analog-stereo' (default)
+14:39:09.599: Switched to scene 'Scene'
+14:39:09.599: Failed to glob scene collections
+14:39:10.240: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+14:39:10.240: 
+14:39:10.449: [rtmp-services plugin] Successfully updated file 'services.json' (version 256)
+14:39:10.449: [rtmp-services plugin] Successfully updated package (version 256)

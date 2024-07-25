@@ -3,14 +3,20 @@ FullScreen=false
 
 [General]
 LockSidebar=true
-ShowSidebar=true
+ShowSidebar=false
 
 [MainWindow]
 ToolBarsMovable=Disabled
 
 [Recent Files]
 File1[$e]=$HOME/Documents/汽車筆試題目.pdf
+File2[$e]=$HOME/Downloads/2024暑假製作＿美夢 劇本（初版）.pdf
+File3[$e]=$HOME/Documents/script.pdf
+File4[$e]=$HOME/code/ioicamp2025-book/main.pdf
 Name1[$e]=汽車筆試題目.pdf
+Name2[$e]=2024暑假製作＿美夢 劇本（初版）.pdf
+Name3[$e]=script.pdf
+Name4[$e]=main.pdf
 
 [UiSettings]
 ColorScheme=

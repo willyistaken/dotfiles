@@ -1,3 +1,10 @@
 [Added Associations]
 application/pdf=okularApplication_pdf.desktop;org.pwmt.zathura.desktop;mupdf.desktop;
-image/jpeg=firefox.desktop;mpv.desktop;
+image/jpeg=firefox.desktop;mpv.desktop;krita_jpeg.desktop;nsxiv.desktop;
+image/png=nsxiv.desktop;
+application/zip=xarchiver.desktop;
+
+[Default Applications]
+image/jpeg=nsxiv.desktop
+x-scheme-handler/discord-1176718791388975124=discord-1176718791388975124.desktop
+application/zip=xarchiver.desktop
