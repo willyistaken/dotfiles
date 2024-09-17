@@ -1,0 +1,187 @@
+Handbrake Version: 1.8.1 (2024062200)
+[14:33:20] gtkgui: Preset: /General/Fast 1080p30
+[14:33:20] Starting work at: Mon Aug  5 14:33:20 2024
+
+[14:33:20] 1 job(s) to process
+[14:33:20] json job:
+{
+    "Audio": {
+        "AudioList": [],
+        "CopyMask": [],
+        "FallbackEncoder": 0
+    },
+    "Destination": {
+        "AlignAVStart": true,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 5,
+                    "Ticks": 498498
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/willychan/Videos/183960-872226574_medium.mp4",
+        "InlineParameterSets": false,
+        "Mux": "m4v",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "1",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "1"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "7"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 2,
+                    "rate": "27000000/900000"
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            }
+        ]
+    },
+    "Metadata": {},
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "Path": "/home/willychan/Videos/test footage/183960-872226574_medium.mp4",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 1,
+        "ColorTransfer": 1,
+        "Encoder": "x264",
+        "HardwareDecode": 0,
+        "Level": "4.0",
+        "MultiPass": false,
+        "Options": "",
+        "Preset": "fast",
+        "Profile": "main",
+        "QSV": {
+            "AdapterIndex": 0,
+            "AsyncDepth": 0,
+            "Decode": false
+        },
+        "Quality": 22.0,
+        "Tune": "",
+        "Turbo": false
+    }
+}
+[14:33:20] CPU: AMD Ryzen 5 7640U w/ Radeon 760M Graphics
+[14:33:20]  - logical processor count: 12
+[14:33:20] Intel Quick Sync Video support: no
+[14:33:20] hb_scan: path=/home/willychan/Videos/test footage/183960-872226574_medium.mp4, title_index=1
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/willychan/Videos/test footage/183960-872226574_medium.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf61.1.100
+  Duration: 00:00:05.54, start: 0.000000, bitrate: 6779 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080, 6776 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)
+      Metadata:
+        handler_name    : Vimeo Artax Video Handler
+        vendor_id       : [0][0][0][0]
+        encoder         : Lavc61.3.100 libx264
+[14:33:20] scan: decoding previews for title 1
+[14:33:21] scan: 10 previews, 1920x1080, 29.970 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+[14:33:21] libhb: scan thread found 1 valid title(s)
+[14:33:21] Starting Task: Encoding Pass
+[14:33:21] work: skipping crop/scale filter
+[14:33:21] job configuration:
+[14:33:21]  * source
+[14:33:21]    + /home/willychan/Videos/test footage/183960-872226574_medium.mp4
+[14:33:21]    + title 1, chapter(s) 1 to 1
+[14:33:21]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[14:33:21]    + data rate: 6779 kbps
+[14:33:21]  * destination
+[14:33:21]    + /home/willychan/Videos/183960-872226574_medium.mp4
+[14:33:21]    + container: MPEG-4 (libavformat)
+[14:33:21]      + align initial A/V stream timestamps
+[14:33:21]  * video track
+[14:33:21]    + decoder: h264 8-bit (yuv420p)
+[14:33:21]      + bitrate 6776 kbps
+[14:33:21]    + filters
+[14:33:21]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[14:33:21]      + Decomb (mode=39)
+[14:33:21]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[14:33:21]        + frame rate: 29.970 fps -> peak rate limited to 30.000 fps
+[14:33:21]    + Output geometry
+[14:33:21]      + storage dimensions: 1920 x 1080
+[14:33:21]      + pixel aspect ratio: 1 : 1
+[14:33:21]      + display dimensions: 1920 x 1080
+[14:33:21]    + encoder: H.264 (libx264)
+[14:33:21]      + preset:  fast
+[14:33:21]      + profile: main
+[14:33:21]      + level:   4.0
+[14:33:21]      + quality: 22.00 (RF)
+[14:33:21]      + color profile: 1-1-1
+[14:33:21]      + color range: tv
+[14:33:21]      + chroma location: left
+[14:33:21] sync: expecting 166 video frames
+[14:33:21] encx264: min-keyint: 30, keyint: 300
+[14:33:21] encx264: encoding at constant RF 22.000000
+[14:33:21] encx264: unparsed options: level=4.0:ref=2:8x8dct=0:weightp=1:subme=6:vbv-bufsize=25000:vbv-maxrate=20000:rc-lookahead=30
+x264 [info]: using SAR=1/1
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+x264 [info]: profile Main, level 4.0, 4:2:0, 8-bit
+[14:33:21] sync: first pts video is 0
+[14:33:21] sync: Chapter 1 at frame 1 time 0
+[14:33:22] reader: done. 1 scr changes

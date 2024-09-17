@@ -20,11 +20,8 @@ map('v','C','"+c')
 map('n','C','"+c')
 
 --plugin keybind--
-map('n',' h','<Esc>:Telescope yank_history<CR>')
-map('n',' f','<Esc>:Telescope find_files<CR>')
-map('n',' v','<Esc>:Telescope treesitter<CR>')
-map('n',' d','<Esc>:lua vim.diagnostic.open_float()<Cr>')
-map('n', ' U', vim.cmd.UndotreeToggle)
+map('n','<F7>','<Esc>:lua require("conform").format({})<CR>')
+
 
 
 

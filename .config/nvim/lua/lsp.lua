@@ -18,12 +18,5 @@ require'lspconfig'.pyright.setup{
 require'lspconfig'.bashls.setup{filetypes={ "sh","zsh" }}
 require'lspconfig'.rust_analyzer.setup{}
 require'lspconfig'.cssls.setup{}
-require'lspconfig'.ltex.setup{}
+require'lspconfig'.texlab.setup{}
 
-lsp_zero.on_attach(function(client, bufnr)
-  lsp_zero.default_keymaps({buffer = bufnr})
-
-	 vim.keymap.set({'n', 'x'}, '<F7>', function()
-    vim.lsp.buf.format({async = false, timeout_ms = 10000})
-  end, opts)
-end)

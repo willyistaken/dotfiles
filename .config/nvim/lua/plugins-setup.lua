@@ -13,5 +13,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup('plugins')
-require("telescope").load_extension("yank_history")
 require("colorizer").setup()

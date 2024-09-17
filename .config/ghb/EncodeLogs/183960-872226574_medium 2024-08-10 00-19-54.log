@@ -1,0 +1,137 @@
+Handbrake Version: 1.8.1 (2024062200)
+[00:19:54] gtkgui: Preset: /General/Fast 1080p30
+[00:19:54] Starting work at: Sat Aug 10 00:19:54 2024
+
+[00:19:54] 1 job(s) to process
+[00:19:54] json job:
+{
+    "Audio": {
+        "AudioList": [],
+        "CopyMask": [],
+        "FallbackEncoder": 0
+    },
+    "Destination": {
+        "AlignAVStart": true,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 5,
+                    "Ticks": 498498
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/willychan/Videos/183960-872226574_medium.mp4",
+        "InlineParameterSets": false,
+        "Mux": "m4v",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "1",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "1"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "7"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 2,
+                    "rate": "27000000/900000"
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            }
+        ]
+    },
+    "Metadata": {},
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "Path": "/home/willychan/Videos/test footage/183960-872226574_medium.mp4",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 1,
+        "ColorTransfer": 1,
+        "Encoder": "x264",
+        "HardwareDecode": 0,
+        "Level": "4.0",
+        "MultiPass": false,
+        "Options": "",
+        "Preset": "fast",
+        "Profile": "main",
+        "QSV": {
+            "AdapterIndex": 0,
+            "AsyncDepth": 0,
+            "Decode": false
+        },
+        "Quality": 22.0,
+        "Tune": "",
+        "Turbo": false
+    }
+}
+[00:19:54] CPU: AMD Ryzen 5 7640U w/ Radeon 760M Graphics
+[00:19:54]  - logical processor count: 12
+[00:19:54] Intel Quick Sync Video support: no
+[00:19:54] hb_scan: path=/home/willychan/Videos/test footage/183960-872226574_medium.mp4, title_index=1
+[00:19:54] hb_stream_open: open /home/willychan/Videos/test footage/183960-872226574_medium.mp4 failed
+[00:19:54] scan: unrecognized file type
+[00:19:54] libhb: scan thread found 0 valid title(s)
+[00:19:54] hb_dict_to_job: Title 1 doesn't exist
+[00:19:54] Finished work at: Sat Aug 10 00:19:54 2024
+
+[00:19:54] libhb: work result = 3

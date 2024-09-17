@@ -1,0 +1,41 @@
+[2024-08-21 11:18:18.251] [info]  No state version found, assuming empty state.
+[2024-08-21 11:18:19.440] [info]  State version: 65
+[2024-08-21 11:21:10.485] [info]  Error: The name is not activatable
+[2024-08-21 11:21:10.492] [info]  Error: The name is not activatable
+[2024-08-21 11:21:10.495] [info]  Error: The name is not activatable
+[2024-08-21 11:21:10.496] [error] SetAccessToken: storing encrypted access token in secure storage failed. Falling back to disk storage. Error: New Access token key unable to be retrieved from secure storage.
+[2024-08-21 11:21:10.501] [info]  Error: The name is not activatable
+[2024-08-21 11:21:10.505] [info]  Error: The name is not activatable
+[2024-08-21 11:21:10.506] [error] SetRefreshToken: storing refresh token in secure storage failed. Falling back to disk storage. Error: Refresh token failed to save to secure storage.
+[2024-08-21 11:21:10.538] [info]  Error: The name is not activatable
+[2024-08-21 11:21:10.540] [info]  Error: The name is not activatable
+[2024-08-21 11:21:10.560] [info]  Error: The name is not activatable
+[2024-08-21 11:21:10.563] [info]  Error: The name is not activatable
+[2024-08-21 11:21:10.567] [info]  Error: The name is not activatable
+[2024-08-21 11:21:10.596] [info]  Error: The name is not activatable
+[2024-08-21 11:21:10.796] [info]  Finished search indexing
+[2024-08-21 11:21:11.020] [info]  Error: The name is not activatable
+[2024-08-21 11:21:11.027] [info]  Error: The name is not activatable
+[2024-08-21 11:21:11.030] [info]  Error: The name is not activatable
+[2024-08-21 11:21:11.031] [error] SetAccessToken: storing encrypted access token in secure storage failed. Falling back to disk storage. Error: New Access token key unable to be retrieved from secure storage.
+[2024-08-21 11:21:11.036] [info]  Error: The name is not activatable
+[2024-08-21 11:21:11.039] [info]  Error: The name is not activatable
+[2024-08-21 11:21:11.040] [error] SetRefreshToken: storing refresh token in secure storage failed. Falling back to disk storage. Error: Refresh token failed to save to secure storage.
+[2024-08-21 11:21:11.045] [info]  Error: The name is not activatable
+[2024-08-21 11:21:11.048] [info]  Error: The name is not activatable
+[2024-08-21 11:21:12.391] [info]  Error: The name is not activatable
+[2024-08-21 11:21:12.467] [info]  Error: The name is not activatable
+[2024-08-21 11:21:12.471] [info]  Error: The name is not activatable
+[2024-08-21 11:21:12.540] [info]  Error: The name is not activatable
+[2024-08-21 11:21:12.610] [info]  Finished search indexing
+[2024-08-21 11:21:53.220] [error] TypeError: Object has been destroyed
+    at WindowMain.<anonymous> (/usr/lib/bitwarden/app.asar/main.js:89991:36)
+    at Generator.next (<anonymous>)
+    at /usr/lib/bitwarden/app.asar/main.js:89753:71
+    at new Promise (<anonymous>)
+    at window_main_awaiter (/usr/lib/bitwarden/app.asar/main.js:89749:12)
+    at WindowMain.updateWindowState (/usr/lib/bitwarden/app.asar/main.js:89986:16)
+    at WindowMain.<anonymous> (/usr/lib/bitwarden/app.asar/main.js:89921:28)
+    at Generator.next (<anonymous>)
+    at /usr/lib/bitwarden/app.asar/main.js:89753:71
+    at new Promise (<anonymous>)

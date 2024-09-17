@@ -1,0 +1,242 @@
+Handbrake Version: 1.8.1 (2024062200)
+[00:19:58] gtkgui: Modified Preset: /Professional/Production Max
+[00:19:58] Starting work at: Sat Aug 10 00:19:58 2024
+
+[00:19:58] 1 job(s) to process
+[00:19:58] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": 320,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "av_aac",
+                "Gain": 0.0,
+                "Mixdown": "stereo",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "av_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "none"
+    },
+    "Destination": {
+        "AlignAVStart": false,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 20,
+                    "Ticks": 1869367
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/willychan/Videos/converted_3598_denoise.mp4",
+        "InlineParameterSets": false,
+        "Mux": "m4v",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 1
+                }
+            },
+            {
+                "ID": 13,
+                "Settings": {
+                    "cb-spatial": "2",
+                    "cb-temporal": "3",
+                    "cr-spatial": "2",
+                    "cr-temporal": "3",
+                    "y-spatial": "3",
+                    "y-temporal": "2"
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 1920
+                }
+            },
+            {
+                "ID": 24,
+                "Settings": {
+                    "cb-size": 7,
+                    "cb-strength": 0.25,
+                    "y-size": 7,
+                    "y-strength": 0.25
+                }
+            }
+        ]
+    },
+    "Metadata": {},
+    "PAR": {
+        "Den": 1,
+        "Num": 1
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "Path": "/home/willychan/Videos/dream/converted_3598.mov",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "ChromaLocation": 0,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 1,
+        "ColorTransfer": 1,
+        "Encoder": "x264",
+        "HardwareDecode": 0,
+        "Level": "auto",
+        "MultiPass": false,
+        "Options": "keyint=12:min-keyint=1:ref=1:bframes=0:qcomp=0.8:aq-strength=0.5:dct-decimate=0:fast-pskip=0:deblock=-2,-2",
+        "Preset": "fast",
+        "Profile": "high",
+        "QSV": {
+            "AdapterIndex": 0,
+            "AsyncDepth": 0,
+            "Decode": false
+        },
+        "Quality": 2.0,
+        "Tune": "",
+        "Turbo": false
+    }
+}
+[00:19:58] CPU: AMD Ryzen 5 7640U w/ Radeon 760M Graphics
+[00:19:58]  - logical processor count: 12
+[00:19:58] Intel Quick Sync Video support: no
+[00:19:58] hb_scan: path=/home/willychan/Videos/dream/converted_3598.mov, title_index=1
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/willychan/Videos/dream/converted_3598.mov':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 512
+    compatible_brands: qt  
+    encoder         : Lavf61.1.100
+  Duration: 00:00:20.77, start: 0.000000, bitrate: 179721 kb/s
+  Stream #0:0[0x1](eng): Video: prores (HQ) (apch / 0x68637061), yuv422p10le(progressive), 1920x1080, 178182 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)
+      Metadata:
+        handler_name    : VideoHandler
+        vendor_id       : FFMP
+        encoder         : Lavc61.3.100 prores_ks
+  Stream #0:1[0x2](eng): Audio: pcm_s16be (twos / 0x736F7774), 48000 Hz, stereo, s16, 1536 kb/s (default)
+      Metadata:
+        handler_name    : SoundHandler
+        vendor_id       : [0][0][0][0]
+[00:19:58] scan: decoding previews for title 1
+[00:19:59] scan: audio 0x1: pcm_s16be, rate=48000Hz, bitrate=1536000 English (pcm_s16be, 2.0 ch, 1536 kbps)
+[00:19:59] scan: 10 previews, 1920x1080, 23.976 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: unspecified
+[00:19:59] libhb: scan thread found 1 valid title(s)
+[00:19:59] Starting Task: Encoding Pass
+[00:19:59] work: skipping crop/scale filter
+[00:19:59] job configuration:
+[00:19:59]  * source
+[00:19:59]    + /home/willychan/Videos/dream/converted_3598.mov
+[00:19:59]    + title 1, chapter(s) 1 to 1
+[00:19:59]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[00:19:59]    + data rate: 179721 kbps
+[00:19:59]  * destination
+[00:19:59]    + /home/willychan/Videos/converted_3598_denoise.mp4
+[00:19:59]    + container: MPEG-4 (libavformat)
+[00:19:59]  * video track
+[00:19:59]    + decoder: prores 10-bit (yuv422p10le)
+[00:19:59]      + bitrate 178182 kbps
+[00:19:59]    + filters
+[00:19:59]      + Framerate Shaper (mode=1)
+[00:19:59]        + frame rate: 23.976 fps -> constant 23.976 fps
+[00:19:59]      + Denoise (hqdn3d) (y-spatial=3:cb-spatial=2:cr-spatial=2:y-temporal=2:cb-temporal=3:cr-temporal=3)
+[00:19:59]      + Sharpen (unsharp) (y-strength=0.25:y-size=7:cb-strength=0.25:cb-size=7)
+[00:19:59]      + Format (format=yuv420p)
+[00:19:59]    + Output geometry
+[00:19:59]      + storage dimensions: 1920 x 1080
+[00:19:59]      + pixel aspect ratio: 1 : 1
+[00:19:59]      + display dimensions: 1920 x 1080
+[00:19:59]    + encoder: H.264 (libx264)
+[00:19:59]      + preset:  fast
+[00:19:59]      + options: keyint=12:min-keyint=1:ref=1:bframes=0:qcomp=0.8:aq-strength=0.5:dct-decimate=0:fast-pskip=0:deblock=-2,-2
+[00:19:59]      + profile: high
+[00:19:59]      + level:   auto
+[00:19:59]      + quality: 2.00 (RF)
+[00:19:59]      + color profile: 1-1-1
+[00:19:59]      + color range: tv
+[00:19:59]      + chroma location: unspecified
+[00:19:59]  * audio track 1
+[00:19:59]    + decoder: English (pcm_s16be, 2.0 ch, 1536 kbps) (track 1, id 0x1)
+[00:19:59]      + bitrate: 1536 kbps, samplerate: 48000 Hz
+[00:19:59]    + mixdown: Stereo
+[00:19:59]    + encoder: AAC (libavcodec)
+[00:19:59]      + bitrate: 320 kbps, samplerate: 48000 Hz
+[00:19:59] sync: expecting 497 video frames
+[00:19:59] encx264: min-keyint: 1, keyint: 12
+[00:19:59] encx264: encoding at constant RF 2.000000
+[00:19:59] encx264: unparsed options: keyint=12:keyint-min=1:ref=1:bframes=0:qcomp=0.8:aq-strength=0.5:dct-decimate=0:fast-pskip=0:deblock=-2,-2:weightp=1:subme=6:rc-lookahead=30
+x264 [info]: using SAR=1/1
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+x264 [info]: profile High, level 4.0, 4:2:0, 8-bit
+[00:19:59] sync: first pts video is 0
+[00:19:59] sync: Chapter 1 at frame 1 time 0
+[00:19:59] sync: first pts audio 0x1 is 0
+[00:20:12] reader: done. 1 scr changes
+[00:20:15] work: average encoding speed for job is 36.459663 fps
+[00:20:16] vfr: 498 frames output, 0 dropped and 0 duped for CFR/PFR
+[00:20:16] vfr: lost time: 0 (0 frames)
+[00:20:16] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[00:20:16] pcm_s16be-decoder done: 996 frames, 0 decoder errors
+[00:20:16] prores-decoder done: 498 frames, 0 decoder errors
+[00:20:16] sync: got 498 frames, 497 expected
+[00:20:16] sync: framerate min 23.976 fps, max 23.976 fps, avg 23.976 fps
+x264 [info]: frame I:43    Avg QP: 0.52  size:944672
+x264 [info]: frame P:455   Avg QP: 2.26  size:656199
+x264 [info]: mb I  I16..4: 26.1% 20.6% 53.3%
+x264 [info]: mb P  I16..4: 12.5%  8.4% 20.8%  P16..4: 39.8%  9.2%  8.8%  0.0%  0.0%    skip: 0.6%
+x264 [info]: 8x8 transform intra:20.2% inter:27.8%
+x264 [info]: coded y,uvDC,uvAC intra: 99.4% 100.0% 100.0% inter: 88.5% 83.2% 83.2%
+x264 [info]: i16 v,h,dc,p: 12% 11% 58% 19%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 22% 31%  4%  4%  3%  3%  4%  5%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 17% 21%  7%  6%  6%  5%  6%  7%
+x264 [info]: i8c dc,h,v,p: 50% 18% 25%  7%
+x264 [info]: Weighted P-Frames: Y:5.3% UV:2.4%
+x264 [info]: kb/s:130641.96
+[00:20:16] mux: track 0, 498 frames, 339189577 bytes, 130379.44 kbps, fifo 32
+[00:20:16] mux: track 1, 974 frames, 746400 bytes, 286.91 kbps, fifo 256
+[00:20:16] Finished work at: Sat Aug 10 00:20:16 2024
+
+[00:20:16] libhb: work result = 0

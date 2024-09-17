@@ -2,6 +2,7 @@
   "LazyVim": { "branch": "main", "commit": "f086bcde253c29be9a2b9c90b413a516f5d5a3b2" },
   "LuaSnip": { "branch": "master", "commit": "b152822e1a4bafb6bdf11a16cc26525cbd95ee00" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "5af77f54de1b16c34b23cba810150689a3a90312" },
+  "conform.nvim": { "branch": "master", "commit": "62eba813b7501b39612146cbf29cd07f1d4ac29c" },
   "lazy.nvim": { "branch": "main", "commit": "407e65c7924989c1efed6bbc89e6287e2d140f02" },
   "lsp-zero.nvim": { "branch": "v3.x", "commit": "e00dcf8a6019a88139626c1668dccdc295abd324" },
   "nord.nvim": { "branch": "master", "commit": "80c1e5321505aeb22b7a9f23eb82f1e193c12470" },
@@ -12,5 +13,6 @@
   "plenary.nvim": { "branch": "master", "commit": "08e301982b9a057110ede7a735dd1b5285eb341f" },
   "telescope.nvim": { "branch": "0.1.x", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" },
   "undotree": { "branch": "master", "commit": "56c684a805fe948936cda0d1b19505b84ad7e065" },
+  "vimtex": { "branch": "master", "commit": "539a203f19531c6b9d2d1b093ee8911fb7050bbc" },
   "yanky.nvim": { "branch": "main", "commit": "7c5cbf0122ff2dfbb6a92f14885894f65949cc8b" }
 }

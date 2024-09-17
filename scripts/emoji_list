@@ -1,4 +1,21 @@
-{ brace, bracket, curly brace, curly bracket, gullwing, open curly bracket
+🛐 place of worship, religion, worship
+🉐 “bargain”, ideograph, Japanese, Japanese “bargain” button, 得
+⚡ danger, electric, high voltage, lightning, voltage, zap
+🤣 face, floor, laugh, rofl, rolling, rolling on the floor laughing, rotfl
+🈶 “not free of charge”, ideograph, Japanese, Japanese “not free of charge” button, 有
+🈯 “reserved”, ideograph, Japanese, Japanese “reserved” button, 指
+🈹 “discount”, ideograph, Japanese, Japanese “discount” button, 割
+🈚 “free of charge”, ideograph, Japanese, Japanese “free of charge” button, 無
+🈲 “prohibited”, ideograph, Japanese, Japanese “prohibited” button, 禁
+🉑 “acceptable”, ideograph, Japanese, Japanese “acceptable” button, 可
+🈸 “application”, ideograph, Japanese, Japanese “application” button, 申
+🈴 “passing grade”, ideograph, Japanese, Japanese “passing grade” button, 合
+🈳 “vacancy”, ideograph, Japanese, Japanese “vacancy” button, 空
+㊗ “congratulations”, ideograph, Japanese, Japanese “congratulations” button, 祝
+㊙ “secret”, ideograph, Japanese, Japanese “secret” button, 秘
+🈷 “monthly amount”, ideograph, Japanese, Japanese “monthly amount” button, 月
+🈺 “open for business”, ideograph, Japanese, Japanese “open for business” button, 営
+🈵 “no vacancy”, ideograph, Japanese, Japanese “no vacancy” button, 満
 🏻 light skin tone, skin tone, type 1–2
 🏼 medium-light skin tone, skin tone, type 3
 🏽 medium skin tone, skin tone, type 4
@@ -350,7 +367,6 @@ _ dash, line, low dash, low line, underdash, underline
 😁 beaming face with smiling eyes, eye, face, grin, smile
 😆 face, grinning squinting face, laugh, mouth, satisfied, smile
 😅 cold, face, grinning face with sweat, open, smile, sweat
-🤣 face, floor, laugh, rofl, rolling, rolling on the floor laughing, rotfl
 😂 face, face with tears of joy, joy, laugh, tear
 🙂 face, slightly smiling face, smile
 🙃 face, upside-down
@@ -366,7 +382,7 @@ _ dash, line, low dash, low line, underdash, underline
 ☺ face, outlined, relaxed, smile, smiling face
 😚 closed, eye, face, kiss, kissing face with closed eyes
 😙 eye, face, kiss, kissing face with smiling eyes, smile
-🥲 grateful, proud, relieved, smiling, smiling face with tear, tear, touched
+🥲 cry,grateful, proud, relieved, smiling, smiling face with tear, tear, touched
 😋 delicious, face, face savoring food, savouring, smile, yum
 😛 face, face with tongue, tongue
 😜 eye, face, joke, tongue, wink, winking face with tongue
@@ -443,7 +459,7 @@ _ dash, line, low dash, low line, underdash, underline
 😤 face, face with steam from nose, triumph, won
 😡 angry, enraged, face, mad, pouting, rage, red
 😠 anger, angry, face, mad
-🤬 face with symbols on mouth, swearing
+🤬 angry,face with symbols on mouth, swearing
 😈 face, fairy tale, fantasy, horns, smile, smiling face with horns
 👿 angry face with horns, demon, devil, face, fantasy, imp
 💀 death, face, fairy tale, monster, skull
@@ -766,8 +782,8 @@ _ dash, line, low dash, low line, underdash, underline
 🦈 fish, shark
 🐙 octopus
 🐚 shell, spiral
-🪸 coral, ocean, reef <!-- 1FAB8 -->
-🪼 burn, invertebrate, jelly, jellyfish, marine, ouch, stinger <!-- 1FABC -->
+🪸 coral, ocean, reef 
+🪼 burn, invertebrate, jelly, jellyfish, marine, ouch, stinger 
 🐌 snail
 🦋 butterfly, insect, pretty
 🐛 bug, insect
@@ -795,7 +811,7 @@ _ dash, line, low dash, low line, underdash, underline
 🌻 flower, sun, sunflower
 🌼 blossom, flower
 🌷 flower, tulip
-🪻 bluebonnet, flower, hyacinth, lavender, lupine, snapdragon <!-- 1FABB -->
+🪻 bluebonnet, flower, hyacinth, lavender, lupine, snapdragon
 🌱 seedling, young
 🪴 boring, grow, house, nurturing, plant, potted plant, useless
 🌲 evergreen tree, tree
@@ -809,8 +825,8 @@ _ dash, line, low dash, low line, underdash, underline
 🍁 falling, leaf, maple
 🍂 fallen leaf, falling, leaf
 🍃 blow, flutter, leaf, leaf fluttering in wind, wind
-🪹 empty nest, nesting <!-- 1FAB9 -->
-🪺 nest with eggs, nesting <!-- 1FABA -->
+🪹 empty nest, nesting 
+🪺 nest with eggs, nesting
 🍄 mushroom, toadstool
 🍇 fruit, grape, grapes
 🍈 fruit, melon
@@ -1155,7 +1171,6 @@ _ dash, line, low dash, low line, underdash, underline
 ☂ clothing, rain, umbrella
 ☔ clothing, drop, rain, umbrella, umbrella with rain drops
 ⛱ rain, sun, umbrella, umbrella on ground
-⚡ danger, electric, high voltage, lightning, voltage, zap
 ❄ cold, snow, snowflake
 ☃ cold, snow, snowman
 ⛄ cold, snow, snowman, snowman without snow
@@ -1472,9 +1487,9 @@ _ dash, line, low dash, low line, underdash, underline
 🩸 bleed, blood donation, drop of blood, injury, medicine, menstruation
 💊 doctor, medicine, pill, sick
 🩹 adhesive bandage, bandage
-🩼 cane, crutch, disability, hurt, mobility aid, stick <!-- 1FA7C -->
+🩼 cane, crutch, disability, hurt, mobility aid, stick
 🩺 doctor, heart, medicine, stethoscope
-🩻 bones, doctor, medical, skeleton, x-ray <!-- 1FA7B -->
+🩻 bones, doctor, medical, skeleton, x-ray 
 🚪 door
 🛗 accessibility, elevator, hoist, lift
 🪞 mirror, reflection, reflector, speculum
@@ -1505,10 +1520,10 @@ _ dash, line, low dash, low line, underdash, underline
 🪦 cemetery, grave, graveyard, headstone, tombstone
 ⚱ ashes, death, funeral, urn
 🧿 bead, charm, evil-eye, nazar, nazar amulet, talisman
-🪬 amulet, Fatima, hamsa, hand, Mary, Miriam, protection <!-- 1FAAC -->
-🗿 face, moai, moyai, statue
+🪬 amulet, Fatima, hamsa, hand, Mary, Miriam, protection
+🗿 face, moai, moyai, statue, stone
 🪧 demonstration, picket, placard, protest, sign
-🪪 credentials, ID, identification card, license, security <!-- 1FAAA -->
+🪪 credentials, ID, identification card, license, security 
 🏧 ATM, ATM sign, automated, bank, teller
 🚮 litter, litter bin, litter in bin sign
 🚰 drinking, potable, water
@@ -1557,7 +1572,6 @@ _ dash, line, low dash, low line, underdash, underline
 🔛 arrow, mark, ON, ON!
 🔜 arrow, SOON
 🔝 arrow, TOP, up
-🛐 place of worship, religion, worship
 ⚛ atheist, atom, atom symbol
 🕉 Hindu, om, religion
 ✡ David, Jew, Jewish, religion, star, star of David
@@ -1671,21 +1685,6 @@ _ dash, line, low dash, low line, underdash, underline
 🆚 versus, VS, VS button
 🈁 “here”, Japanese, Japanese “here” button, katakana, ココ
 🈂 “service charge”, Japanese, Japanese “service charge” button, katakana, サ
-🈷 “monthly amount”, ideograph, Japanese, Japanese “monthly amount” button, 月
-🈶 “not free of charge”, ideograph, Japanese, Japanese “not free of charge” button, 有
-🈯 “reserved”, ideograph, Japanese, Japanese “reserved” button, 指
-🉐 “bargain”, ideograph, Japanese, Japanese “bargain” button, 得
-🈹 “discount”, ideograph, Japanese, Japanese “discount” button, 割
-🈚 “free of charge”, ideograph, Japanese, Japanese “free of charge” button, 無
-🈲 “prohibited”, ideograph, Japanese, Japanese “prohibited” button, 禁
-🉑 “acceptable”, ideograph, Japanese, Japanese “acceptable” button, 可
-🈸 “application”, ideograph, Japanese, Japanese “application” button, 申
-🈴 “passing grade”, ideograph, Japanese, Japanese “passing grade” button, 合
-🈳 “vacancy”, ideograph, Japanese, Japanese “vacancy” button, 空
-㊗ “congratulations”, ideograph, Japanese, Japanese “congratulations” button, 祝
-㊙ “secret”, ideograph, Japanese, Japanese “secret” button, 秘
-🈺 “open for business”, ideograph, Japanese, Japanese “open for business” button, 営
-🈵 “no vacancy”, ideograph, Japanese, Japanese “no vacancy” button, 満
 🔴 circle, geometric, red
 🟠 circle, orange
 🟡 circle, yellow

@@ -20,8 +20,12 @@ alias ls="ls --color=auto"
 alias la="ls --color=auto -a"
 alias vim="nvim"
 alias vi="nvim"
+alias clear-tex="~/dotfiles/scripts/clear-tex.sh"
 
-
+export PATH=/home/willychan/.cargo/bin:$PATH
+export PATH=/usr/local/texlive/2024/bin/x86_64-linux:$PATH
+export MANPATH=/usr/local/texlive/2024/texmf-dist/doc/man:$MANPATH
+export INFOPATH=/usr/local/texlive/2024/texmf-dist/doc/info:$INFOPATH
 
 
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
@@ -36,6 +40,10 @@ function zvm_config() {
 }
 
 source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+LFCD="$HOME/.config/lf/lfcd.sh"                                #  pre-built binary, make sure to use absolute path
+source "$LFCD"
+alias lf="lfcd"
 
 
 eval "$(zoxide init --cmd cd zsh)"

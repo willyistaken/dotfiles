@@ -1,0 +1,29 @@
+\documentclass[12pt]{homework}
+
+\newcommand{\hwname}{陳澔樂}
+\newcommand{\hwnumber}{B13902014}
+\newcommand{\hwclass}{###}
+\newcommand{\hwtype}{###}
+\newcommand{\hwdepartment}{CSIE}
+\newcommand{\hwnum}{###}
+\XeTeXlinebreaklocale "zh"
+\usepackage{fontspec}
+\setmainfont{Noto Serif CJK TC SemiBold}
+% font can be found using 
+% fc-list  | cut -d\  -f2-99 | cut -d: -f1 | sort -u
+\DeclareMathSizes{12}{16}{12}{10}
+\begin{document}
+\maketitle
+\question
+\end{document}
+
+
+
+%refrence:
+% \question , \question*{title} \newpage for newpage
+% \begin{alphapart} & \begin{arabicpart} with \questionpart
+
+% \renewcommand{\questiontype}{abc} will be  abc (questioncnt)
+% \setcounter{questionCounter}{9000}
+% \bigbox{}
+

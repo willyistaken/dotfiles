@@ -1,5 +1,7 @@
 [Desktop Entry]
 FullScreen=false
+shouldShowMenuBarComingFromFullScreen=true
+shouldShowToolBarComingFromFullScreen=true
 
 [General]
 LockSidebar=true
@@ -9,14 +11,26 @@ ShowSidebar=false
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Documents/汽車筆試題目.pdf
-File2[$e]=$HOME/Downloads/2024暑假製作＿美夢 劇本（初版）.pdf
-File3[$e]=$HOME/Documents/script.pdf
-File4[$e]=$HOME/code/ioicamp2025-book/main.pdf
-Name1[$e]=汽車筆試題目.pdf
-Name2[$e]=2024暑假製作＿美夢 劇本（初版）.pdf
-Name3[$e]=script.pdf
-Name4[$e]=main.pdf
+File1[$e]=$HOME/code/ioicamp2025-book/main.pdf
+File10[$e]=$HOME/homework/general-physics/hw1/Q5.pdf
+File2[$e]=$HOME/homework/general-physics/hw1.pdf
+File3[$e]=$HOME/homework/general-physics/a.pdf
+File4[$e]=$HOME/homework/general-physics/example.pdf
+File5[$e]=$HOME/homework/general-physics/hw1/Assignment_1.pdf
+File6[$e]=$HOME/homework/general-physics/hw1/Q4.pdf
+File7[$e]=$HOME/homework/general-physics/hw1/Q3.pdf
+File8[$e]=$HOME/homework/general-physics/hw1/Q1.pdf
+File9[$e]=$HOME/homework/general-physics/hw1/Q2.pdf
+Name1[$e]=main.pdf
+Name10[$e]=Q5.pdf
+Name2[$e]=hw1.pdf
+Name3[$e]=a.pdf
+Name4[$e]=example.pdf
+Name5[$e]=Assignment_1.pdf
+Name6[$e]=Q4.pdf
+Name7[$e]=Q3.pdf
+Name8[$e]=Q1.pdf
+Name9[$e]=Q2.pdf
 
 [UiSettings]
 ColorScheme=

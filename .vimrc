@@ -8,7 +8,7 @@ ino {<CR> {<CR>}<Esc>i
 ino jj <Esc>
 map <F5> :w<CR>:!g++ -g -fsanitize=undefined,address  -Wall -Wextra -Wshadow %:r.cpp -o %:r &&echo "Compiled" && ./%:r<CR>
 imap <F5> <Esc><F5>
-
+hi MatchParen cterm=none ctermbg=green ctermfg=blue
 
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>

@@ -1,0 +1,238 @@
+17:12:22.420: Platform: Wayland
+17:12:22.420: CPU Name: AMD Ryzen 5 7640U w/ Radeon 760M Graphics
+17:12:22.420: CPU Speed: 1397.475MHz
+17:12:22.421: Physical Cores: 6, Logical Cores: 12
+17:12:22.421: Physical Memory: 15293MB Total, 10752MB Free
+17:12:22.421: Kernel Version: Linux 6.10.6-arch1-1
+17:12:22.421: Distribution: "Arch Linux" Unknown
+17:12:22.421: Desktop Environment: Hyprland ()
+17:12:22.421: Session Type: wayland
+17:12:22.425: Qt Version: 6.7.2 (runtime), 6.7.2 (compiled)
+17:12:22.425: Portable mode: false
+17:12:22.513: OBS 30.2.1-1 (linux)
+17:12:22.513: ---------------------------------
+17:12:22.514: ---------------------------------
+17:12:22.514: audio settings reset:
+17:12:22.514: 	samples per sec: 48000
+17:12:22.514: 	speakers:        2
+17:12:22.514: 	max buffering:   960 milliseconds
+17:12:22.514: 	buffering type:  dynamically increasing
+17:12:22.526: ---------------------------------
+17:12:22.526: Initializing OpenGL...
+17:12:22.526: Using EGL/Wayland
+17:12:22.596: Initialized EGL 1.5
+17:12:22.626: Loading up OpenGL on adapter AMD AMD Radeon 760M (radeonsi, gfx1103_r1, LLVM 18.1.8, DRM 3.57, 6.10.6-arch1-1)
+17:12:22.626: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 24.1.6-arch1.1, shading language 4.60
+17:12:22.695: ---------------------------------
+17:12:22.695: video settings reset:
+17:12:22.695: 	base resolution:   1920x1080
+17:12:22.695: 	output resolution: 1280x720
+17:12:22.695: 	downscale filter:  Bicubic
+17:12:22.695: 	fps:               30/1
+17:12:22.695: 	format:            NV12
+17:12:22.695: 	YUV mode:          Rec. 709/Partial
+17:12:22.695: NV12 texture support enabled
+17:12:22.695: P010 texture support not available
+17:12:22.700: Audio monitoring device:
+17:12:22.700: 	name: Default
+17:12:22.700: 	id: default
+17:12:22.700: ---------------------------------
+17:12:22.715: Failed to load 'en-US' text for module: 'decklink-captions.so'
+17:12:22.731: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+17:12:22.745: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+17:12:22.745: Failed to initialize module 'decklink.so'
+17:12:23.073: [pipewire] Available capture sources:
+17:12:23.073: [pipewire]     - Monitor source
+17:12:23.073: [pipewire]     - Window source
+17:12:23.112: v4l2loopback not installed, virtual camera not registered
+17:12:23.253: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+17:12:23.253: FFmpeg VAAPI H264 encoding not supported
+17:12:23.253: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+17:12:23.254: FFmpeg VAAPI AV1 encoding not supported
+17:12:23.254: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+17:12:23.254: FFmpeg VAAPI HEVC encoding not supported
+17:12:23.453: [rtmp-services plugin] Remote update of URL "https://obsproject.com/obs2_update/rtmp-services/v5/package.json" failed: Could not resolve host: obsproject.com
+17:12:23.460: ---------------------------------
+17:12:23.460:   Loaded Modules:
+17:12:23.460:     text-freetype2.so
+17:12:23.460:     rtmp-services.so
+17:12:23.460:     obs-x264.so
+17:12:23.460:     obs-webrtc.so
+17:12:23.460:     obs-vst.so
+17:12:23.460:     obs-transitions.so
+17:12:23.460:     obs-qsv11.so
+17:12:23.460:     obs-outputs.so
+17:12:23.460:     obs-libfdk.so
+17:12:23.460:     obs-filters.so
+17:12:23.460:     obs-ffmpeg.so
+17:12:23.460:     linux-v4l2.so
+17:12:23.460:     linux-pulseaudio.so
+17:12:23.460:     linux-pipewire.so
+17:12:23.460:     linux-jack.so
+17:12:23.460:     linux-capture.so
+17:12:23.460:     linux-alsa.so
+17:12:23.460:     image-source.so
+17:12:23.460:     frontend-tools.so
+17:12:23.460:     decklink-output-ui.so
+17:12:23.460:     decklink-captions.so
+17:12:23.460: ---------------------------------
+17:12:23.460: ---------------------------------
+17:12:23.460: Available Encoders:
+17:12:23.460:   Video Encoders:
+17:12:23.460: 	- ffmpeg_svt_av1 (SVT-AV1)
+17:12:23.460: 	- ffmpeg_aom_av1 (AOM AV1)
+17:12:23.460: 	- obs_x264 (x264)
+17:12:23.460:   Audio Encoders:
+17:12:23.461: 	- ffmpeg_aac (FFmpeg AAC)
+17:12:23.461: 	- ffmpeg_opus (FFmpeg Opus)
+17:12:23.461: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+17:12:23.461: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+17:12:23.461: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+17:12:23.461: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+17:12:23.461: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+17:12:23.461: 	- libfdk_aac (libfdk AAC)
+17:12:23.461: ==== Startup complete ===============================================
+17:12:23.521: All scene data cleared
+17:12:23.521: ------------------------------------------------
+17:12:23.529: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.2) 15.0.0'
+17:12:23.529: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+17:12:23.530: pulse-input: Started recording from 'alsa_output.pci-0000_c1_00.6.analog-stereo.monitor' (default)
+17:12:23.530: [Loaded global audio device]: 'Desktop Audio'
+17:12:23.531: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.2) 15.0.0'
+17:12:23.531: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+17:12:23.532: pulse-input: Started recording from 'alsa_input.pci-0000_c1_00.6.analog-stereo' (default)
+17:12:23.532: [Loaded global audio device]: 'Mic/Aux'
+17:12:23.532: v4l2-input: Start capture from /dev/video2
+17:12:23.662: v4l2-input: Input: 0
+17:12:23.666: v4l2-input: Resolution: 1280x720
+17:12:23.666: v4l2-input: Pixelformat: MJPG
+17:12:23.666: v4l2-input: Linesize: 0 Bytes
+17:12:23.666: v4l2-input: Framerate: 60.00 fps
+17:12:23.669: v4l2-input: /dev/video2: select timeout set to 83333 (5x frame periods)
+17:12:23.671: Switched to scene 'Scene'
+17:12:23.671: ------------------------------------------------
+17:12:23.671: Loaded scenes:
+17:12:23.671: - scene 'Scene':
+17:12:23.672:     - source: 'Video Capture Device (V4L2)' (v4l2_input)
+17:12:23.672: ------------------------------------------------
+17:12:23.843: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+17:12:23.880: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+17:12:24.200: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+17:12:24.200: 
+17:13:21.188: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+17:13:26.468: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+17:13:30.361: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+17:13:31.846: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+17:13:34.199: v4l2-input: /dev/video3 seems to not support video capture
+17:13:34.199: v4l2-input: /dev/video1 seems to not support video capture
+17:13:34.200: v4l2-input: Found device 'USB Video: USB Video' at /dev/video2
+17:13:34.326: v4l2-input: Found device 'Laptop Camera: Laptop Camera' at /dev/video0
+17:13:34.329: v4l2-input: Pixelformat: Motion-JPEG (available)
+17:13:34.329: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+17:13:34.329: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+17:13:34.329: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+17:13:34.329: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+17:13:34.329: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+17:13:34.331: v4l2-input: Found input 'Camera 1' (Index 0)
+17:13:34.332: v4l2-input: Pixelformat: Motion-JPEG (available)
+17:13:34.332: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+17:13:34.332: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+17:13:34.332: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+17:13:34.332: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+17:13:34.332: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+17:13:34.393: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+17:13:34.401: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+17:13:36.539: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+17:13:38.629: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x619e854956e0
+17:13:43.568: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+17:14:16.373: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x619e85363e60
+17:14:19.541: Creating a popup with a parent, QWidgetWindow(0x619e82fa8ee0, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x619e854a25a0, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+17:14:21.515: Creating a popup with a parent, QWidgetWindow(0x619e82fa8ee0, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x619e854a25a0, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+17:14:22.390: Creating a popup with a parent, QWidgetWindow(0x619e82fa8ee0, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x619e854a25a0, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+17:14:23.342: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+17:14:24.336: The cached device pixel ratio value was stale on window update.  Please file a QTBUG which explains how to reproduce.
+17:36:53.250: v4l2-input: /dev/video2: failed to enqueue buffer
+17:36:53.251: v4l2-input: /dev/video2: Stopped capture after 88213 frames
+17:36:53.251: v4l2-helpers: unable to stop stream
+17:36:53.255: v4l2-input: Device /dev/video2 disconnected
+17:37:04.493: v4l2-input: Device /dev/video2 reconnected
+17:37:04.494: v4l2-input: Start capture from /dev/video2
+17:37:04.495: v4l2-input: Input: 0
+17:37:04.498: v4l2-input: Resolution: 1280x720
+17:37:04.498: v4l2-input: Pixelformat: MJPG
+17:37:04.499: v4l2-input: Linesize: 0 Bytes
+17:37:04.500: v4l2-input: Framerate: 60.00 fps
+17:37:04.506: v4l2-input: /dev/video2: select timeout set to 83333 (5x frame periods)
+17:49:39.076: v4l2-input: /dev/video2: failed to dequeue buffer
+17:49:39.076: v4l2-input: /dev/video2: Stopped capture after 45292 frames
+17:49:39.076: v4l2-helpers: unable to stop stream
+17:49:39.086: v4l2-input: Device /dev/video2 disconnected
+17:56:33.964: virtual void QtWaylandClient::QWaylandTextInputv3::zwp_text_input_v3_leave(wl_surface*) Got leave event for surface 0x0 focused surface 0x619e84dbfde0
+17:56:35.895: ==== Shutting down ==================================================
+17:56:35.900: pulse-input: Stopped recording from 'alsa_output.pci-0000_c1_00.6.analog-stereo.monitor'
+17:56:35.900: pulse-input: Got 106089 packets with 127306800 frames
+17:56:35.900: pulse-input: Stopped recording from 'alsa_input.pci-0000_c1_00.6.analog-stereo'
+17:56:35.900: pulse-input: Got 106088 packets with 127305600 frames
+17:56:35.961: All scene data cleared
+17:56:35.962: ------------------------------------------------
+17:56:36.055: [Scripting] Total detached callbacks: 0
+17:56:36.056: Freeing OBS context data
+17:56:36.099: == Profiler Results =============================
+17:56:36.099: run_program_init: 1412.33 ms
+17:56:36.099:  ┣OBSApp::AppInit: 26.305 ms
+17:56:36.099:  ┃ ┗OBSApp::InitLocale: 1.73 ms
+17:56:36.099:  ┗OBSApp::OBSInit: 1322.28 ms
+17:56:36.099:    ┣obs_startup: 5.221 ms
+17:56:36.099:    ┗OBSBasic::OBSInit: 1228.82 ms
+17:56:36.099:      ┣OBSBasic::InitBasicConfig: 0.215 ms
+17:56:36.099:      ┣OBSBasic::ResetAudio: 0.57 ms
+17:56:36.099:      ┣OBSBasic::ResetVideo: 185.719 ms
+17:56:36.099:      ┃ ┗obs_init_graphics: 180.572 ms
+17:56:36.099:      ┃   ┗shader compilation: 67.136 ms
+17:56:36.099:      ┣OBSBasic::InitOBSCallbacks: 0.012 ms
+17:56:36.099:      ┣OBSBasic::InitHotkeys: 0.044 ms
+17:56:36.099:      ┣obs_load_all_modules2: 759.89 ms
+17:56:36.099:      ┃ ┣obs_init_module(decklink-captions.so): 0.002 ms
+17:56:36.099:      ┃ ┣obs_init_module(decklink-output-ui.so): 0.002 ms
+17:56:36.099:      ┃ ┣obs_init_module(decklink.so): 0.213 ms
+17:56:36.099:      ┃ ┣obs_init_module(frontend-tools.so): 155.007 ms
+17:56:36.099:      ┃ ┣obs_init_module(image-source.so): 0.026 ms
+17:56:36.099:      ┃ ┣obs_init_module(linux-alsa.so): 0.006 ms
+17:56:36.099:      ┃ ┣obs_init_module(linux-capture.so): 0.004 ms
+17:56:36.099:      ┃ ┣obs_init_module(linux-jack.so): 0.009 ms
+17:56:36.099:      ┃ ┣obs_init_module(linux-pipewire.so): 29.445 ms
+17:56:36.099:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.015 ms
+17:56:36.099:      ┃ ┣obs_init_module(linux-v4l2.so): 7.244 ms
+17:56:36.099:      ┃ ┣obs_init_module(obs-ffmpeg.so): 4.659 ms
+17:56:36.099:      ┃ ┃ ┗nvenc_check: 2.613 ms
+17:56:36.099:      ┃ ┣obs_init_module(obs-filters.so): 0.069 ms
+17:56:36.099:      ┃ ┣obs_init_module(obs-libfdk.so): 0.006 ms
+17:56:36.099:      ┃ ┣obs_init_module(obs-outputs.so): 0.012 ms
+17:56:36.099:      ┃ ┣obs_init_module(obs-qsv11.so): 2.839 ms
+17:56:36.099:      ┃ ┣obs_init_module(obs-transitions.so): 0.023 ms
+17:56:36.099:      ┃ ┣obs_init_module(obs-vst.so): 0.009 ms
+17:56:36.099:      ┃ ┣obs_init_module(obs-webrtc.so): 0.013 ms
+17:56:36.099:      ┃ ┣obs_init_module(obs-x264.so): 0.006 ms
+17:56:36.099:      ┃ ┣obs_init_module(rtmp-services.so): 1.12 ms
+17:56:36.099:      ┃ ┗obs_init_module(text-freetype2.so): 0.023 ms
+17:56:36.099:      ┣OBSBasic::InitService: 1.865 ms
+17:56:36.099:      ┣OBSBasic::ResetOutputs: 0.398 ms
+17:56:36.099:      ┣OBSBasic::CreateHotkeys: 0.05 ms
+17:56:36.099:      ┣OBSBasic::InitPrimitives: 0.184 ms
+17:56:36.099:      ┗OBSBasic::Load: 208.325 ms
+17:56:36.099: obs_hotkey_thread(25 ms): min=0.001 ms, median=0.004 ms, max=0.45 ms, 99th percentile=0.013 ms, 100% below 25 ms
+17:56:36.099: audio_thread(Audio): min=0.012 ms, median=0.084 ms, max=12.73 ms, 99th percentile=0.64 ms
+17:56:36.099: obs_graphics_thread(33.3333 ms): min=0.38 ms, median=2.788 ms, max=136.752 ms, 99th percentile=3.232 ms, 99.9899% below 33.333 ms
+17:56:36.099:  ┣tick_sources: min=0.002 ms, median=0.025 ms, max=136.167 ms, 99th percentile=0.088 ms
+17:56:36.099:  ┣output_frame: min=0.321 ms, median=1.162 ms, max=17.333 ms, 99th percentile=1.451 ms
+17:56:36.099:  ┃ ┗gs_context(video->graphics): min=0.316 ms, median=1.158 ms, max=17.326 ms, 99th percentile=1.445 ms
+17:56:36.099:  ┃   ┣render_video: min=0.031 ms, median=0.62 ms, max=16.633 ms, 99th percentile=0.907 ms
+17:56:36.099:  ┃   ┃ ┗render_main_texture: min=0.017 ms, median=0.606 ms, max=16.62 ms, 99th percentile=0.893 ms
+17:56:36.099:  ┃   ┗gs_flush: min=0.005 ms, median=0.013 ms, max=0.072 ms, 99th percentile=0.02 ms
+17:56:36.099:  ┗render_displays: min=0.007 ms, median=1.521 ms, max=115.481 ms, 99th percentile=1.812 ms
+17:56:36.099: =================================================
+17:56:36.099: == Profiler Time Between Calls ==================
+17:56:36.100: obs_hotkey_thread(25 ms): min=25.044 ms, median=25.168 ms, max=29.141 ms, 90.7698% within ±2% of 25 ms (0% lower, 9.23015% higher)
+17:56:36.100: obs_graphics_thread(33.3333 ms): min=9.342 ms, median=33.333 ms, max=136.814 ms, 99.6859% within ±2% of 33.333 ms (0.144489% lower, 0.169617% higher)
+17:56:36.100: =================================================
+17:56:36.128: Number of memory leaks: 0
