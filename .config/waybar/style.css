@@ -1,0 +1,86 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Ubuntu Nerd Font";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: white;
+}
+
+#window {
+    font-weight: bold;
+    font-family: "Ubuntu";
+}
+/*
+#workspaces {
+    padding: 0 5px;
+}
+*/
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: white;
+    border-top: 2px solid transparent;
+}
+
+#workspaces button.active {
+  color: #1e1e2e;
+  background-color: #cdfff4;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: #1e1e2e;
+  background-color: #cdfff4;
+}
+
+#workspaces button.urgent {
+  background-color: #f38ba8;
+}
+
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
+    padding: 0 3px;
+    margin: 0 2px;
+}
+
+#clock {
+    font-weight: bold;
+}
+#clock:hover{
+	background-color:#126644;
+}
+
+#battery:hover{
+	background-color:#126644;
+}
+#network:hover{
+	background-color:#126644;
+}
+
+#network.disconnected {
+    background: #f53c3c;
+}
+#pulseaudio:hover{
+	background-color:#126644;
+}
+#pulseaudio {
+}
+
+#pulseaudio.muted {
+	background-color:#555533
+}
+#tray {
+}
+

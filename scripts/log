@@ -1,0 +1,340 @@
+fsync: up and running.
+0174:trace:x11drv:init_pixmap_formats depth 1, bpp 1, pad 32
+0174:trace:x11drv:init_pixmap_formats depth 4, bpp 8, pad 32
+0174:trace:x11drv:init_pixmap_formats depth 8, bpp 8, pad 32
+0174:trace:x11drv:init_pixmap_formats depth 15, bpp 16, pad 32
+0174:trace:x11drv:init_pixmap_formats depth 16, bpp 16, pad 32
+0174:trace:x11drv:init_pixmap_formats depth 24, bpp 32, pad 32
+0174:trace:x11drv:init_pixmap_formats depth 32, bpp 32, pad 32
+0174:trace:x11drv:init_visuals default visual 45 class 4 argb 75
+0174:warn:x11drv:get_work_area _GTK_WORKAREAS is not supported, fallback to _NET_WORKAREA. Work areas may be incorrect on multi-monitor systems.
+0174:warn:x11drv:get_work_area _NET_WORKAREA is not supported, Work areas may be incorrect.
+0174:trace:x11drv:get_work_area work_rect:(0,0)-(2256,1504).
+0174:trace:x11drv:xinerama_init monitor 0x0: (0,0)-(2256,1504) work (0,0)-(2256,1504) (primary)
+0174:trace:x11drv:X11DRV_DisplayDevices_SetHandler Display device functions are now handled by: Xinerama
+0174:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: NoRes.
+0174:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: XF86VidMode.
+0174:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: XRandR 1.0.
+0174:trace:x11drv:X11DRV_DisplayDevices_SetHandler Display device functions are now handled by: XRandR 1.4
+0174:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: XRandR 1.4.
+0174:trace:x11drv:x11drv_load_xfixes Xfixes, error 140, event 87, version 6.0 found
+0174:trace:x11drv:X11DRV_XComposite_Init XComposite is up and running error_base = 0
+0174:trace:x11drv:net_supporting_wm_check_init Detected window manager: "Hyprland :D"
+0174:trace:x11drv:error_handler got expected error 3 req 20
+0174:trace:x11drv:error_handler got expected error 3 req 20
+0174:trace:x11drv:X11DRV_CreateDesktop L"Default" 1920x1080
+0174:warn:x11drv:get_work_area _GTK_WORKAREAS is not supported, fallback to _NET_WORKAREA. Work areas may be incorrect on multi-monitor systems.
+0174:warn:x11drv:get_work_area _NET_WORKAREA is not supported, Work areas may be incorrect.
+0174:trace:x11drv:get_work_area work_rect:(0,0)-(2256,1504).
+0174:trace:x11drv:X11DRV_UpdateDisplayDevices via "XRandR 1.4"
+0174:trace:x11drv:X11DRV_UpdateDisplayDevices GPU count: 1
+0174:trace:x11drv:X11DRV_UpdateDisplayDevices GPU: 0 "Wine GPU", adapter count: 1
+0174:warn:x11drv:get_work_area _GTK_WORKAREAS is not supported, fallback to _NET_WORKAREA. Work areas may be incorrect on multi-monitor systems.
+0174:warn:x11drv:get_work_area _NET_WORKAREA is not supported, Work areas may be incorrect.
+0174:trace:x11drv:get_work_area work_rect:(0,0)-(2256,1504).
+0174:trace:x11drv:X11DRV_UpdateDisplayDevices adapter: 0x21, monitor count: 1
+0174:trace:x11drv:window_set_managed window 0x2008a/800007, requesting override-redirect 1 -> 0 serial 83
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2008a, swp_flags 0x14, shaped 0, rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) }
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x2008a/800007 new_rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) } style 86000000 flags 0000003c fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x2008a/800007 requesting WM_NORMAL_HINTS flags 0x230, serial 92
+0174:trace:x11drv:window_set_mwm_hints window 0x2008a/800007, requesting _MOTIF_WM_HINTS 2c,3a serial 95
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2008a, swp_flags 0x10, shaped 0, rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) }
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x2008a/800007 new_rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) } style 86000000 flags 00000018 fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x2008a/800007 requesting WM_NORMAL_HINTS flags 0x230, serial 96
+0174:trace:x11drv:X11DRV_CreateWindow winstation name L"WinSta0".
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2003e, swp_flags 0x14, shaped 0, rects { window (0,0)-(100,100), client (0,0)-(100,100), visible (0,0)-(100,100) }
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2003e, swp_flags 0x10, shaped 0, rects { window (0,0)-(100,100), client (0,0)-(100,100), visible (0,0)-(100,100) }
+0174:trace:x11drv:set_size_hints window 0x2008a/800007 requesting WM_NORMAL_HINTS flags 0x230, serial 103
+0174:trace:x11drv:set_style_hints window 0x2008a/800007 requesting _NET_WM_WINDOW_TYPE 0x11a, serial 105
+0174:trace:x11drv:set_style_hints window 0x2008a/800007 requesting WM_HINTS flags 0x67, serial 106
+0174:trace:x11drv:set_style_hints window 0x2008a/800007 requesting _NET_WM_ICON, serial 107
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2008a, swp_flags 0x104a, shaped 0, rects { window (0,0)-(1920,1080), client (0,0)-(1920,1080), visible (0,0)-(1920,1080) }
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x2008a/800007 new_rects { window (0,0)-(1920,1080), client (0,0)-(1920,1080), visible (0,0)-(1920,1080) } style 96000000 flags 0000116a fullscreen 1
+0174:trace:x11drv:set_size_hints window 0x2008a/800007 requesting WM_NORMAL_HINTS flags 0x200, serial 113
+0174:trace:x11drv:window_set_config window 0x2008a/800007, requesting config (0,0)-(1920,1080) above 1 mask 0x4c, serial 115
+0174:trace:x11drv:map_window win 0x2008a/800007
+0174:trace:x11drv:set_size_hints window 0x2008a/800007 requesting WM_NORMAL_HINTS flags 0x200, serial 118
+0174:trace:x11drv:set_style_hints window 0x2008a/800007 requesting _NET_WM_WINDOW_TYPE 0x11a, serial 120
+0174:trace:x11drv:set_style_hints window 0x2008a/800007 requesting WM_HINTS flags 0x67, serial 121
+0174:trace:x11drv:set_style_hints window 0x2008a/800007 requesting _NET_WM_ICON, serial 122
+0174:trace:x11drv:window_set_wm_state window 0x2008a/800007, requesting WM_STATE 0 -> 0x1 serial 126, foreground (nil), activate 1
+0174:trace:x11drv:X11DRV_ExtEscape SET_DRAWABLE hdc 0xd010040 drawable 800007 dc_rect (0,0)-(1920,1080)
+0174:trace:x11drv:X11DRV_UpdateDisplayDevices via "XRandR 1.4"
+0174:trace:x11drv:X11DRV_UpdateDisplayDevices GPU count: 1
+0174:trace:x11drv:X11DRV_UpdateDisplayDevices GPU: 0 "Wine GPU", adapter count: 1
+0174:warn:x11drv:get_work_area _GTK_WORKAREAS is not supported, fallback to _NET_WORKAREA. Work areas may be incorrect on multi-monitor systems.
+0174:warn:x11drv:get_work_area _NET_WORKAREA is not supported, Work areas may be incorrect.
+0174:trace:x11drv:get_work_area work_rect:(0,0)-(2256,1504).
+0174:trace:x11drv:X11DRV_UpdateDisplayDevices adapter: 0x21, monitor count: 1
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2008a, swp_flags 0x381f, shaped 0, rects { window (0,0)-(1920,1080), client (0,0)-(1920,1080), visible (0,0)-(1920,1080) }
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x2008a/800007 new_rects { window (0,0)-(1920,1080), client (0,0)-(1920,1080), visible (0,0)-(1920,1080) } style 96000000 flags 0000381f fullscreen 1
+0174:trace:x11drv:set_size_hints window 0x2008a/800007 requesting WM_NORMAL_HINTS flags 0x200, serial 127
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2002c, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2002c, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x30022, swp_flags 0x14, shaped 0, rects { window (0,0)-(166,52), client (0,0)-(166,52), visible (0,0)-(166,52) }
+0174:trace:x11drv:set_size_hints window 0x30022/800009 requesting WM_NORMAL_HINTS flags 0x234, serial 139
+0174:trace:x11drv:set_style_hints window 0x30022/800009 requesting _NET_WM_WINDOW_TYPE 0x11a, serial 140
+0174:trace:x11drv:set_style_hints window 0x30022/800009 requesting WM_HINTS flags 0x43, serial 141
+0174:trace:x11drv:set_style_hints window 0x30022/800009 deleting _NET_WM_ICON, serial 142
+0174:trace:x11drv:X11DRV_create_win_data win 0x30022/800009 window (0,0)-(166,52) whole (0,0)-(166,52) client (0,0)-(166,52)
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x30022/800009 new_rects { window (0,0)-(166,52), client (0,0)-(166,52), visible (0,0)-(166,52) } style 04c80000 flags 0000003c fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x30022/800009 requesting WM_NORMAL_HINTS flags 0x234, serial 149
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x3003a, swp_flags 0x14, shaped 0, rects { window (0,0)-(1,1), client (0,0)-(1,1), visible (0,0)-(1,1) }
+0174:trace:x11drv:set_size_hints window 0x3003a/80000a requesting WM_NORMAL_HINTS flags 0x234, serial 161
+0174:trace:x11drv:set_style_hints window 0x3003a/80000a requesting _NET_WM_WINDOW_TYPE 0x11a, serial 162
+0174:trace:x11drv:set_style_hints window 0x3003a/80000a requesting WM_HINTS flags 0x43, serial 163
+0174:trace:x11drv:set_style_hints window 0x3003a/80000a deleting _NET_WM_ICON, serial 164
+0174:trace:x11drv:X11DRV_create_win_data win 0x3003a/80000a window (0,0)-(1,1) whole (0,0)-(1,1) client (0,0)-(1,1)
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x3003a/80000a new_rects { window (0,0)-(1,1), client (0,0)-(1,1), visible (0,0)-(1,1) } style 8c000000 flags 0000003c fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x3003a/80000a requesting WM_NORMAL_HINTS flags 0x234, serial 171
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x3003a, swp_flags 0x10, shaped 0, rects { window (0,0)-(1,1), client (0,0)-(1,1), visible (0,0)-(1,1) }
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x3003a/80000a new_rects { window (0,0)-(1,1), client (0,0)-(1,1), visible (0,0)-(1,1) } style 8c000000 flags 00000018 fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x3003a/80000a requesting WM_NORMAL_HINTS flags 0x234, serial 175
+0174:trace:x11drv:window_set_config window 0x3003a/80000a, requesting config (0,0)-(1,1) above 1 mask 0x40, serial 176
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x30022, swp_flags 0x10, shaped 0, rects { window (0,0)-(166,52), client (3,29)-(163,49), visible (0,0)-(166,52) }
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x30022/800009 new_rects { window (0,0)-(166,52), client (3,29)-(163,49), visible (0,0)-(166,52) } style 04c80000 flags 00000018 fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x30022/800009 requesting WM_NORMAL_HINTS flags 0x234, serial 178
+0174:trace:x11drv:window_set_config window 0x30022/800009, requesting config (0,0)-(166,52) above 1 mask 0x40, serial 179
+0174:trace:x11drv:X11DRV_ExtEscape SET_DRAWABLE hdc 0x1d010051 drawable 800007 dc_rect (0,0)-(1920,1080)
+0178:trace:x11drv:net_supporting_wm_check_init Detected window manager: "Hyprland :D"
+0178:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x30034, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x20032, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0178:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x30034, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x20032, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x30032, swp_flags 0x14, shaped 0, rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) }
+0174:trace:x11drv:set_size_hints window 0x30032/80000b requesting WM_NORMAL_HINTS flags 0x234, serial 189
+0174:trace:x11drv:set_style_hints window 0x30032/80000b requesting _NET_WM_WINDOW_TYPE 0x11a, serial 190
+0174:trace:x11drv:set_style_hints window 0x30032/80000b requesting WM_HINTS flags 0x43, serial 191
+0174:trace:x11drv:set_style_hints window 0x30032/80000b deleting _NET_WM_ICON, serial 192
+0174:trace:x11drv:X11DRV_create_win_data win 0x30032/80000b window (0,0)-(0,0) whole (0,0)-(0,0) client (0,0)-(0,0)
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x30032/80000b new_rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) } style 84000000 flags 0000003c fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x30032/80000b requesting WM_NORMAL_HINTS flags 0x234, serial 201
+0174:trace:x11drv:window_set_config window 0x30032/80000b, requesting config (0,0)-(0,0) above 0 mask 0xc, serial 202
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x30032, swp_flags 0x10, shaped 0, rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) }
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x30032/80000b new_rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) } style 84000000 flags 00000018 fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x30032/80000b requesting WM_NORMAL_HINTS flags 0x234, serial 206
+0174:trace:x11drv:window_set_config window 0x30032/80000b, requesting config (0,0)-(0,0) above 1 mask 0x40, serial 207
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2002e, swp_flags 0x14, shaped 0, rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) }
+0174:trace:x11drv:set_size_hints window 0x2002e/80000c requesting WM_NORMAL_HINTS flags 0x234, serial 217
+0174:trace:x11drv:set_style_hints window 0x2002e/80000c requesting _NET_WM_WINDOW_TYPE 0x11a, serial 218
+0174:trace:x11drv:set_style_hints window 0x2002e/80000c requesting WM_HINTS flags 0x43, serial 219
+0174:trace:x11drv:set_style_hints window 0x2002e/80000c deleting _NET_WM_ICON, serial 220
+0174:trace:x11drv:X11DRV_create_win_data win 0x2002e/80000c window (0,0)-(0,0) whole (0,0)-(0,0) client (0,0)-(0,0)
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x2002e/80000c new_rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) } style 84000000 flags 0000003c fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x2002e/80000c requesting WM_NORMAL_HINTS flags 0x234, serial 228
+0174:trace:x11drv:window_set_config window 0x2002e/80000c, requesting config (0,0)-(0,0) above 0 mask 0xc, serial 229
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2002e, swp_flags 0x10, shaped 0, rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) }
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x2002e/80000c new_rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) } style 84000000 flags 00000018 fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x2002e/80000c requesting WM_NORMAL_HINTS flags 0x234, serial 233
+0174:trace:x11drv:window_set_config window 0x2002e/80000c, requesting config (0,0)-(0,0) above 1 mask 0x40, serial 234
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x30060, swp_flags 0x14, shaped 0, rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) }
+0174:trace:x11drv:set_size_hints window 0x30060/80000d requesting WM_NORMAL_HINTS flags 0x234, serial 244
+0174:trace:x11drv:set_style_hints window 0x30060/80000d requesting _NET_WM_WINDOW_TYPE 0x11a, serial 245
+0174:trace:x11drv:set_style_hints window 0x30060/80000d requesting WM_HINTS flags 0x43, serial 246
+0174:trace:x11drv:set_style_hints window 0x30060/80000d deleting _NET_WM_ICON, serial 247
+0174:trace:x11drv:X11DRV_create_win_data win 0x30060/80000d window (0,0)-(0,0) whole (0,0)-(0,0) client (0,0)-(0,0)
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x30060/80000d new_rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) } style 84000000 flags 0000003c fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x30060/80000d requesting WM_NORMAL_HINTS flags 0x234, serial 255
+0174:trace:x11drv:window_set_config window 0x30060/80000d, requesting config (0,0)-(0,0) above 0 mask 0xc, serial 256
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x30060, swp_flags 0x10, shaped 0, rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) }
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x30060/80000d new_rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) } style 84000000 flags 00000018 fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x30060/80000d requesting WM_NORMAL_HINTS flags 0x234, serial 260
+0174:trace:x11drv:window_set_config window 0x30060/80000d, requesting config (0,0)-(0,0) above 1 mask 0x40, serial 261
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x3005e, swp_flags 0x14, shaped 0, rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) }
+0174:trace:x11drv:set_size_hints window 0x3005e/80000e requesting WM_NORMAL_HINTS flags 0x234, serial 271
+0174:trace:x11drv:set_style_hints window 0x3005e/80000e requesting _NET_WM_WINDOW_TYPE 0x11a, serial 272
+0174:trace:x11drv:set_style_hints window 0x3005e/80000e requesting WM_HINTS flags 0x43, serial 273
+0174:trace:x11drv:set_style_hints window 0x3005e/80000e deleting _NET_WM_ICON, serial 274
+0174:trace:x11drv:X11DRV_create_win_data win 0x3005e/80000e window (0,0)-(0,0) whole (0,0)-(0,0) client (0,0)-(0,0)
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x3005e/80000e new_rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) } style 84000000 flags 0000003c fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x3005e/80000e requesting WM_NORMAL_HINTS flags 0x234, serial 282
+0174:trace:x11drv:window_set_config window 0x3005e/80000e, requesting config (0,0)-(0,0) above 0 mask 0xc, serial 283
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x3005e, swp_flags 0x10, shaped 0, rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) }
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x3005e/80000e new_rects { window (0,0)-(0,0), client (0,0)-(0,0), visible (0,0)-(0,0) } style 84000000 flags 00000018 fullscreen 0
+0174:trace:x11drv:set_size_hints window 0x3005e/80000e requesting WM_NORMAL_HINTS flags 0x234, serial 287
+0174:trace:x11drv:window_set_config window 0x3005e/80000e, requesting config (0,0)-(0,0) above 1 mask 0x40, serial 288
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x3005a, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x3005a, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+017c:trace:x11drv:net_supporting_wm_check_init Detected window manager: "Hyprland :D"
+017c:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x3002a, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+017c:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x3002a, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+0174:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2008a, swp_flags 0x181b, shaped 0, rects { window (0,0)-(1920,1080), client (0,0)-(1920,1080), visible (0,0)-(1920,1080) }
+0174:trace:x11drv:X11DRV_WindowPosChanged win 0x2008a/800007 new_rects { window (0,0)-(1920,1080), client (0,0)-(1920,1080), visible (0,0)-(1920,1080) } style 96000000 flags 0000181b fullscreen 1
+0174:trace:x11drv:set_size_hints window 0x2008a/800007 requesting WM_NORMAL_HINTS flags 0x200, serial 290
+0174:trace:x11drv:X11DRV_ExtEscape SET_DRAWABLE hdc 0x1d010051 drawable 800007 dc_rect (0,0)-(1920,1080)
+0180:trace:x11drv:net_supporting_wm_check_init Detected window manager: "Hyprland :D"
+0180:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x20048, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0180:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x20048, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+0174:fixme:file:GetLongPathNameW UNC pathname L"\\\\?\\Z:\\home\\willychan\\.local\\share\\Steam\\steamapps\\common\\Proton - Experimental\\files\\share\\wine/../xalia/xalia.exe"
+0174:fixme:file:GetLongPathNameW UNC pathname L"\\\\?\\Z:\\home\\willychan\\.local\\share\\Steam\\steamapps\\common\\Proton - Experimental\\files\\share\\wine/../xalia/xalia.exe"
+0174:fixme:file:GetLongPathNameW UNC pathname L"\\\\?\\Z:\\home\\willychan\\.local\\share\\Steam\\steamapps\\common\\Proton - Experimental\\files\\share\\wine/../xalia/xalia.exe"
+0174:trace:x11drv:handle_state_change window 0x2008a/800007 _MOTIF_WM_HINTS 2c,3a/95, expected 2c,3a/95
+0174:fixme:event:X11DRV_ConfigureNotify synthetic event mapping not implemented
+0174:trace:x11drv:handle_state_change window 0x2008a/800007 config (0,0)-(1920,1080)/126, expected (0,0)-(1920,1080)/115
+0174:trace:x11drv:handle_state_change window 0x2008a/800007 WM_STATE 0x1/126, expected 0x1/126
+0174:trace:x11drv:handle_state_change window 0x2008a/800007 _NET_WM_STATE 0/126
+0174:trace:x11drv:handle_state_change window 0x30022/800009 config (0,0)-(166,52)/179, expected (0,0)-(166,52)/179
+0174:trace:x11drv:X11DRV_ExtEscape SET_DRAWABLE hdc 0x1d010051 drawable 800007 dc_rect (0,0)-(1920,1080)
+0174:warn:x11drv:handle_state_change window 0x2008a/800007 unexpected config (0,-1728)-(3072,0)/304
+0174:fixme:event:X11DRV_ConfigureNotify synthetic event mapping not implemented
+0174:trace:x11drv:handle_state_change window 0x2008a/800007 config (0,-1728)-(3072,0)/304
+0174:trace:x11drv:X11DRV_ExtEscape SET_DRAWABLE hdc 0x1d010051 drawable 800007 dc_rect (0,0)-(1920,1080)
+0174:warn:x11drv:handle_state_change window 0x2008a/800007 unexpected config (0,0)-(1920,1080)/304
+0174:trace:x11drv:handle_state_change window 0x2008a/800007 _NET_WM_STATE 0/304
+0174:trace:x11drv:handle_state_change window 0x2008a/800007 WM_STATE 0x1/304
+0174:trace:x11drv:handle_state_change window 0x2008a/800007 _NET_WM_STATE 0/304
+0174:fixme:event:X11DRV_ConfigureNotify synthetic event mapping not implemented
+0174:trace:x11drv:handle_state_change window 0x2008a/800007 config (0,0)-(1920,1080)/304
+0174:trace:x11drv:handle_state_change window 0x2008a/800007 _NET_WM_STATE 0/304
+0174:trace:x11drv:handle_state_change window 0x2008a/800007 WM_STATE 0x1/304
+0190:trace:x11drv:init_pixmap_formats depth 1, bpp 1, pad 32
+0158:trace:x11drv:init_pixmap_formats depth 1, bpp 1, pad 32
+0190:trace:x11drv:init_pixmap_formats depth 4, bpp 8, pad 32
+0174:fixme:event:X11DRV_ConfigureNotify synthetic event mapping not implemented
+0158:trace:x11drv:init_pixmap_formats depth 4, bpp 8, pad 32
+0190:trace:x11drv:init_pixmap_formats depth 8, bpp 8, pad 32
+0174:trace:x11drv:handle_state_change window 0x2008a/800007 config (0,0)-(1920,1080)/304
+0158:trace:x11drv:init_pixmap_formats depth 8, bpp 8, pad 32
+0190:trace:x11drv:init_pixmap_formats depth 15, bpp 16, pad 32
+0158:trace:x11drv:init_pixmap_formats depth 15, bpp 16, pad 32
+0190:trace:x11drv:init_pixmap_formats depth 16, bpp 16, pad 32
+0158:trace:x11drv:init_pixmap_formats depth 16, bpp 16, pad 32
+0190:trace:x11drv:init_pixmap_formats depth 24, bpp 32, pad 32
+0158:trace:x11drv:init_pixmap_formats depth 24, bpp 32, pad 32
+0190:trace:x11drv:init_pixmap_formats depth 32, bpp 32, pad 32
+0158:trace:x11drv:init_pixmap_formats depth 32, bpp 32, pad 32
+0190:trace:x11drv:init_visuals default visual 45 class 4 argb 75
+0158:trace:x11drv:init_visuals default visual 45 class 4 argb 75
+0174:trace:x11drv:X11DRV_ExtEscape SET_DRAWABLE hdc 0x1d010051 drawable 800007 dc_rect (0,0)-(1920,1080)
+0190:warn:x11drv:get_work_area _GTK_WORKAREAS is not supported, fallback to _NET_WORKAREA. Work areas may be incorrect on multi-monitor systems.
+0190:warn:x11drv:get_work_area _NET_WORKAREA is not supported, Work areas may be incorrect.
+0190:trace:x11drv:get_work_area work_rect:(0,0)-(2256,1504).
+0190:trace:x11drv:xinerama_init monitor 0x0: (0,0)-(2256,1504) work (0,0)-(2256,1504) (primary)
+0190:trace:x11drv:X11DRV_DisplayDevices_SetHandler Display device functions are now handled by: Xinerama
+0190:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: NoRes.
+0158:warn:x11drv:get_work_area _GTK_WORKAREAS is not supported, fallback to _NET_WORKAREA. Work areas may be incorrect on multi-monitor systems.
+0158:warn:x11drv:get_work_area _NET_WORKAREA is not supported, Work areas may be incorrect.
+0158:trace:x11drv:get_work_area work_rect:(0,0)-(2256,1504).
+0158:trace:x11drv:xinerama_init monitor 0x0: (0,0)-(2256,1504) work (0,0)-(2256,1504) (primary)
+0158:trace:x11drv:X11DRV_DisplayDevices_SetHandler Display device functions are now handled by: Xinerama
+0158:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: NoRes.
+0190:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: XF86VidMode.
+0158:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: XF86VidMode.
+0190:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: XRandR 1.0.
+0158:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: XRandR 1.0.
+0190:trace:x11drv:X11DRV_DisplayDevices_SetHandler Display device functions are now handled by: XRandR 1.4
+0158:trace:x11drv:X11DRV_DisplayDevices_SetHandler Display device functions are now handled by: XRandR 1.4
+0190:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: XRandR 1.4.
+0158:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: XRandR 1.4.
+0190:trace:x11drv:x11drv_load_xfixes Xfixes, error 140, event 87, version 6.0 found
+0158:trace:x11drv:x11drv_load_xfixes Xfixes, error 140, event 87, version 6.0 found
+0190:trace:x11drv:X11DRV_XComposite_Init XComposite is up and running error_base = 0
+0158:trace:x11drv:X11DRV_XComposite_Init XComposite is up and running error_base = 0
+0158:trace:x11drv:net_supporting_wm_check_init Detected window manager: "Hyprland :D"
+0190:trace:x11drv:net_supporting_wm_check_init Detected window manager: "Hyprland :D"
+0158:warn:x11drv:get_work_area _GTK_WORKAREAS is not supported, fallback to _NET_WORKAREA. Work areas may be incorrect on multi-monitor systems.
+0158:warn:x11drv:get_work_area _NET_WORKAREA is not supported, Work areas may be incorrect.
+0158:trace:x11drv:get_work_area work_rect:(0,0)-(2256,1504).
+0190:warn:x11drv:get_work_area _GTK_WORKAREAS is not supported, fallback to _NET_WORKAREA. Work areas may be incorrect on multi-monitor systems.
+0190:warn:x11drv:get_work_area _NET_WORKAREA is not supported, Work areas may be incorrect.
+0190:trace:x11drv:get_work_area work_rect:(0,0)-(2256,1504).
+0158:err:steam:run_process Failed to create process L"\"C:\\Program Files\\Cycling '74\\Max 8\\Max.exe\"": 2
+019c:trace:x11drv:net_supporting_wm_check_init Detected window manager: "Hyprland :D"
+019c:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2007e, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+019c:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2007e, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0190:fixme:oleacc:find_class_data unhandled window class: L"#32769"
+0190:fixme:uiautomation:uia_get_providers_for_hwnd Override provider callback currently unimplemented.
+0190:fixme:uiautomation:default_uia_provider_callback Default ProviderType_NonClientArea provider unimplemented.
+0190:fixme:oleacc:find_class_data unhandled window class: L"#32769"
+01a4:trace:x11drv:net_supporting_wm_check_init Detected window manager: "Hyprland :D"
+01a4:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x40074, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+01a4:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x40074, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0190:fixme:uiautomation:base_hwnd_fragment_get_FragmentRoot 0000000000816598, 000000000021F9A0: stub!
+0190:fixme:uiautomation:base_hwnd_fragment_GetEmbeddedFragmentRoots 0000000000816598, 000000000021F9B0: stub!
+01a8:trace:x11drv:net_supporting_wm_check_init Detected window manager: "Hyprland :D"
+01a8:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x30090, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+01a8:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x30090, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0190:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x50064, swp_flags 0x14, shaped 0, rects { window (4,4)-(123,38), client (4,4)-(123,38), visible (4,4)-(123,38) }
+0190:trace:x11drv:set_size_hints window 0x50064/1e00001 requesting WM_NORMAL_HINTS flags 0x204, serial 74
+0190:trace:x11drv:set_style_hints window 0x50064/1e00001 requesting _NET_WM_WINDOW_TYPE 0x11a, serial 75
+0190:trace:x11drv:set_style_hints window 0x50064/1e00001 requesting WM_HINTS flags 0x43, serial 76
+0190:trace:x11drv:set_style_hints window 0x50064/1e00001 deleting _NET_WM_ICON, serial 77
+0190:trace:x11drv:X11DRV_create_win_data win 0x50064/1e00001 window (4,4)-(123,38) whole (4,4)-(123,38) client (4,4)-(123,38)
+0190:trace:x11drv:X11DRV_WindowPosChanged win 0x50064/1e00001 new_rects { window (4,4)-(123,38), client (4,4)-(123,38), visible (4,4)-(123,38) } style 04cf0000 flags 0000003c fullscreen 0
+0190:trace:x11drv:set_size_hints window 0x50064/1e00001 requesting WM_NORMAL_HINTS flags 0x204, serial 84
+0190:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x4006e, swp_flags 0x14, shaped 0, rects { window (0,0)-(1,1), client (0,0)-(1,1), visible (0,0)-(1,1) }
+0190:trace:x11drv:set_size_hints window 0x4006e/1e00002 requesting WM_NORMAL_HINTS flags 0x234, serial 96
+0190:trace:x11drv:set_style_hints window 0x4006e/1e00002 requesting _NET_WM_WINDOW_TYPE 0x11a, serial 97
+0190:trace:x11drv:set_style_hints window 0x4006e/1e00002 requesting WM_HINTS flags 0x43, serial 98
+0190:trace:x11drv:set_style_hints window 0x4006e/1e00002 deleting _NET_WM_ICON, serial 99
+0190:trace:x11drv:X11DRV_create_win_data win 0x4006e/1e00002 window (0,0)-(1,1) whole (0,0)-(1,1) client (0,0)-(1,1)
+0190:trace:x11drv:X11DRV_WindowPosChanged win 0x4006e/1e00002 new_rects { window (0,0)-(1,1), client (0,0)-(1,1), visible (0,0)-(1,1) } style 8c000000 flags 0000003c fullscreen 0
+0190:trace:x11drv:set_size_hints window 0x4006e/1e00002 requesting WM_NORMAL_HINTS flags 0x234, serial 106
+0190:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x4006e, swp_flags 0x10, shaped 0, rects { window (0,0)-(1,1), client (0,0)-(1,1), visible (0,0)-(1,1) }
+0190:trace:x11drv:X11DRV_WindowPosChanged win 0x4006e/1e00002 new_rects { window (0,0)-(1,1), client (0,0)-(1,1), visible (0,0)-(1,1) } style 8c000000 flags 00000018 fullscreen 0
+0190:trace:x11drv:set_size_hints window 0x4006e/1e00002 requesting WM_NORMAL_HINTS flags 0x234, serial 110
+0190:trace:x11drv:window_set_config window 0x4006e/1e00002, requesting config (0,0)-(1,1) above 1 mask 0x40, serial 111
+0190:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x50064, swp_flags 0x10, shaped 0, rects { window (4,4)-(123,38), client (8,34)-(119,34), visible (4,4)-(123,38) }
+0190:trace:x11drv:X11DRV_WindowPosChanged win 0x50064/1e00001 new_rects { window (4,4)-(123,38), client (8,34)-(119,34), visible (4,4)-(123,38) } style 04cf0000 flags 00000018 fullscreen 0
+0190:trace:x11drv:set_size_hints window 0x50064/1e00001 requesting WM_NORMAL_HINTS flags 0x204, serial 113
+0190:trace:x11drv:window_set_config window 0x50064/1e00001, requesting config (4,4)-(123,38) above 1 mask 0x40, serial 114
+0190:trace:x11drv:handle_state_change window 0x50064/1e00001 config (4,4)-(123,38)/114, expected (4,4)-(123,38)/114
+0198:trace:x11drv:init_pixmap_formats depth 1, bpp 1, pad 32
+0198:trace:x11drv:init_pixmap_formats depth 4, bpp 8, pad 32
+0198:trace:x11drv:init_pixmap_formats depth 8, bpp 8, pad 32
+0198:trace:x11drv:init_pixmap_formats depth 15, bpp 16, pad 32
+0198:trace:x11drv:init_pixmap_formats depth 16, bpp 16, pad 32
+0198:trace:x11drv:init_pixmap_formats depth 24, bpp 32, pad 32
+0198:trace:x11drv:init_pixmap_formats depth 32, bpp 32, pad 32
+0198:trace:x11drv:init_visuals default visual 45 class 4 argb 75
+0198:warn:x11drv:get_work_area _GTK_WORKAREAS is not supported, fallback to _NET_WORKAREA. Work areas may be incorrect on multi-monitor systems.
+0198:warn:x11drv:get_work_area _NET_WORKAREA is not supported, Work areas may be incorrect.
+0198:trace:x11drv:get_work_area work_rect:(0,0)-(2256,1504).
+0198:trace:x11drv:xinerama_init monitor 0x0: (0,0)-(2256,1504) work (0,0)-(2256,1504) (primary)
+0198:trace:x11drv:X11DRV_DisplayDevices_SetHandler Display device functions are now handled by: Xinerama
+0198:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: NoRes.
+0198:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: XF86VidMode.
+0198:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: XRandR 1.0.
+0198:trace:x11drv:X11DRV_DisplayDevices_SetHandler Display device functions are now handled by: XRandR 1.4
+0198:trace:x11drv:X11DRV_Settings_SetHandler Display settings are now handled by: XRandR 1.4.
+0198:trace:x11drv:x11drv_load_xfixes Xfixes, error 140, event 87, version 6.0 found
+0198:trace:x11drv:X11DRV_XComposite_Init XComposite is up and running error_base = 0
+0198:trace:x11drv:net_supporting_wm_check_init Detected window manager: "Hyprland :D"
+0198:warn:x11drv:get_work_area _GTK_WORKAREAS is not supported, fallback to _NET_WORKAREA. Work areas may be incorrect on multi-monitor systems.
+0198:warn:x11drv:get_work_area _NET_WORKAREA is not supported, Work areas may be incorrect.
+0198:trace:x11drv:get_work_area work_rect:(0,0)-(2256,1504).
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x1009a, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x1009a, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+0198:fixme:mscoree:parse_supported_runtime sku=L".NETFramework,Version=v4.8" not implemented
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2009a, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x2009a, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+0198:fixme:mscoree:parse_supported_runtime sku=L".NETFramework,Version=v4.8" not implemented
+0198:fixme:ntdll:NtQuerySystemInformation info_class SYSTEM_PERFORMANCE_INFORMATION
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x3009a, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x3009a, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x1009e, swp_flags 0x14, shaped 0, rects { window (0,0)-(1440,810), client (0,0)-(1440,810), visible (0,0)-(1440,810) }
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x1009e, swp_flags 0x10, shaped 0, rects { window (0,0)-(1440,810), client (3,29)-(1437,807), visible (0,0)-(1440,810) }
+0198:trace:x11drv:X11DRV_ExtEscape SET_DRAWABLE hdc 0x3d010040 drawable 800007 dc_rect (0,0)-(1920,1080)
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x200a0, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x200a0, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+01c0:trace:x11drv:net_supporting_wm_check_init Detected window manager: "Hyprland :D"
+01c0:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x100b0, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+01c0:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x100b0, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x100b4, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x100b4, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+0198:fixme:combase:RoGetActivationFactory (L"Windows.Gaming.Input.RawGameController", {eb8d0792-e95a-4b19-afc7-0a59f8bf759e}, 00006FFFFD9A8960): semi-stub
+01c4:trace:x11drv:net_supporting_wm_check_init Detected window manager: "Hyprland :D"
+01c4:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x100b6, swp_flags 0x14, shaped 0, rects { window (0,0)-(119,34), client (0,0)-(119,34), visible (0,0)-(119,34) }
+01c4:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x100b6, swp_flags 0x10, shaped 0, rects { window (0,0)-(119,34), client (3,29)-(116,31), visible (0,0)-(119,34) }
+0174:trace:x11drv:destroy_whole_window win 0x3005e xwin 80000e/0
+0174:trace:x11drv:destroy_whole_window win 0x30060 xwin 80000d/0
+0174:trace:x11drv:destroy_whole_window win 0x2002e xwin 80000c/0
+0174:trace:x11drv:destroy_whole_window win 0x30032 xwin 80000b/0
+01b4:err:service:device_notify_proc failed to get event, error 1726
+0198:trace:x11drv:X11DRV_WindowPosChanging hwnd 0x40096, swp_flags 0x14, shaped 0, rects { window (0,0)-(5,5), client (0,0)-(5,5), visible (0,0)-(5,5) }
+0198:trace:x11drv:error_handler got ignored error 3 req 2
+X Error of failed request:  BadWindow (invalid Window parameter)
+  Major opcode of failed request:  1 (X_CreateWindow)
+  Resource id in failed request:  0x800007
+  Serial number of failed request:  68
+  Current serial number in output stream:  73

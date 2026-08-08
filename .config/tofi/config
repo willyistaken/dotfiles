@@ -1,0 +1,91 @@
+# Black-and-White Minimalist Theme for Tofi
+#
+# Copy this file to ~/.config/tofi/config to apply.
+
+### Fonts
+font = "Monospace"
+font-size = 15
+font-features = ""
+font-variations = ""
+hint-font = false
+
+### Text theming
+text-color = #FFFFFF
+prompt-color = #FFFFFF
+selection-color = #ffffaa
+background-color = #000000C5
+
+# Prompt text theme
+prompt-background = #000000C5
+prompt-background-padding = 0
+prompt-background-corner-radius = 0
+
+# Placeholder text theme
+placeholder-color = #AAAAAA
+placeholder-background = #000000C5
+placeholder-background-padding = 0
+placeholder-background-corner-radius = 0
+
+# Input text theme
+input-color = #FFFFFF
+input-background = #000000C5
+input-background-padding = 0
+input-background-corner-radius = 0
+
+# Default result text theme
+default-result-color = #FFFFFF
+default-result-background = #000000C5
+default-result-background-padding = 0
+default-result-background-corner-radius = 0
+
+# Selection text
+default-selection-color = #000000C5
+default-selection-background = #FFFFFF
+default-selection-background-padding = 0
+default-selection-background-corner-radius = 0
+
+### Text cursor theme
+text-cursor-style = bar
+text-cursor-color = #FFFFFF
+text-cursor-background = #000000C5
+text-cursor-corner-radius = 0
+
+### Window theming
+width = 50%
+height = 50%
+outline-width = 0
+outline-color = #000000C5
+border-width = 2
+border-color = #FFFFFF
+corner-radius = 10
+padding-top = 5%
+padding-bottom = 5%
+padding-left = 5%
+padding-right = 5%
+clip-to-padding = true
+scale = true
+
+### Window positioning
+anchor = center
+exclusive-zone = 0
+margin-top = 0
+margin-bottom = 0
+margin-left = 0
+margin-right = 0
+
+### Behavior
+hide-cursor = true
+text-cursor = true
+history = true
+matching-algorithm = prefix
+fuzzy-match = true
+require-match = false
+auto-accept-single = false
+hide-input = false
+hidden-character = "*"
+physical-keybindings = true
+print-index = false
+drun-launch = false
+late-keyboard-init = false
+multi-instance = false
+ascii-input = true

@@ -1,0 +1,4 @@
+arch = {packages=["docker-compose","ccid","opensc","pcsc-tools","ripgrep","pv","pyenv","matlab-mpm","python-pyotp","jabref","anki","ghcup-hs-bin","easyeffects","mda.lv2","slack-desktop","geeqie", "id3v2", "python-ffsubsync" , "python-mosspy", "python-pyftpdlib", "reptyr","lua-luautf8","zotero-bin","speech-dispatcher","piper-tts-bin","piper-voices-en-us","bluez","bluez-utils"]}
+uv = {packages=["kobodl", "pygments"]}
+cargo = {packages=["metapac"]}
+flatpak = {packages=[{name="system:com.github.iwalton3.jellyfin-media-player"}]}

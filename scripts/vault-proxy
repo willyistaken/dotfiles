@@ -1,0 +1,427 @@
+#!/usr/bin/env bash
+#
+# vault-proxy — shrink oversized Obsidian attachments to synced "proxies",
+#               moving the full-resolution originals outside the vault.
+#
+#   vault/attachments/DSCF1816.jpg   proxy within budget  (synced by Syncthing)
+#   ~/vault-originals/DSCF1816.jpg   full original        (never synced)
+#
+# The proxy keeps the ORIGINAL FILENAME, so no note ever needs editing.
+# Originals live OUTSIDE the vault deliberately: a same-named file inside the
+# vault would make every bare `![[DSCF1816.jpg]]` link ambiguous to Obsidian.
+#
+# Safe by default: writes nothing without --apply. Never deletes; originals are
+# moved, and --restore puts any of them back.
+#
+#   vault-proxy                        # dry run: what would happen, per type
+#   vault-proxy --apply
+#   vault-proxy --apply --recursive    # include subfolders
+#   vault-proxy --verify               # every note-referenced asset resolves?
+#   vault-proxy --restore all --apply
+#   vault-proxy --restore DSCF1816.jpg --apply
+#
+set -uo pipefail
+
+# ##########################################################################
+# ###  CONFIG — EDIT THIS BLOCK  ############################################
+# ##########################################################################
+
+VAULT_DIR="$HOME/vault"
+ATTACH_DIR="$VAULT_DIR/attachments"
+ORIGINALS_DIR="$HOME/vault-originals"     # MUST be outside the vault
+
+# --- Size budget per type -------------------------------------------------
+# A file is only touched if it EXCEEDS its budget; the proxy is then squeezed
+# until it fits. Suffixes: k, m, g.  Use "skip" to never touch that type.
+BUDGET_IMAGE="500k"
+BUDGET_VIDEO="8m"
+BUDGET_AUDIO="2m"
+BUDGET_PDF="20m"
+BUDGET_OTHER="skip"      # zip, apkg, ... nothing useful to compress
+
+# Per-extension budgets. These WIN over the class budgets above.
+# One "ext=budget" per line. Blank lines and # comments are ignored.
+BUDGET_OVERRIDES="
+gif = 1m
+heic = 500k
+"
+
+# --- Which extensions belong to which class ------------------------------
+EXT_IMAGE="jpg jpeg png gif webp heic heif tif tiff bmp"
+EXT_VIDEO="mp4 mov avi mkv webm m4v 3gp"
+EXT_AUDIO="mp3 m4a wav flac ogg opus aac"
+EXT_PDF="pdf"
+
+# --- Hard resolution caps -------------------------------------------------
+# Applied on top of the ladders below: a proxy never exceeds these dimensions,
+# even at the highest-quality rung.
+MAX_EDGE_IMAGE=2560
+MAX_EDGE_VIDEO=1280
+
+# --- Quality ladders ------------------------------------------------------
+# Tried top to bottom until the output fits the budget. Resizing as well as
+# recompressing is what keeps a small photo still looking acceptable.
+# Images: "<long-edge-px> <jpeg-quality>"
+LADDER_IMAGE="
+2560 88
+2560 80
+2048 78
+1920 72
+1600 65
+1280 60
+1024 55
+ 800 50
+"
+# Video: "<long-edge-px> <x264-crf> <audio-kbps>"   (higher crf = smaller)
+LADDER_VIDEO="
+1920 26 128
+1600 28 128
+1280 30  96
+1280 34  96
+ 854 36  64
+ 640 40  48
+"
+# Audio: "<kbps>"
+LADDER_AUDIO="
+192
+128
+ 96
+ 64
+"
+
+# --- Behaviour ------------------------------------------------------------
+RECURSIVE=1              # 1 = also walk subfolders of attachments/
+JOBS=10                  # parallel workers
+STRIP_EXIF=0             # 1 = drop EXIF from image proxies (originals keep it)
+
+# ##########################################################################
+# ###  END CONFIG — no need to edit below  #################################
+# ##########################################################################
+
+APPLY=0
+MODE=proxy
+RESTORE_TARGET=""
+FILES=()
+
+while (( $# )); do
+  case $1 in
+    --apply)      APPLY=1 ;;
+    --dry-run)    APPLY=0 ;;
+    --recursive)  RECURSIVE=1 ;;
+    --flat)       RECURSIVE=0 ;;
+    --jobs)       JOBS=$2; shift ;;
+    --vault)      VAULT_DIR=$2; ATTACH_DIR=$2/attachments; shift ;;
+    --attach)     ATTACH_DIR=$2; shift ;;
+    --originals)  ORIGINALS_DIR=$2; shift ;;
+    --strip)      STRIP_EXIF=1 ;;
+    --restore)    MODE=restore; RESTORE_TARGET=${2:-all}
+                  [[ ${2:-} == --* || -z ${2:-} ]] || shift ;;
+    --verify)     MODE=verify ;;
+    -h|--help)    sed -n '2,26p' "$0"; exit 0 ;;
+    --)           shift; FILES+=("$@"); break ;;
+    -*)           echo "unknown option: $1" >&2; exit 2 ;;
+    *)            FILES+=("$1") ;;
+  esac
+  shift
+done
+
+LOG="$ORIGINALS_DIR/.proxy-log.tsv"
+TMP="$ORIGINALS_DIR/.tmp"
+
+need() { command -v "$1" >/dev/null 2>&1; }
+human() { numfmt --to=iec --suffix=B "${1:-0}" 2>/dev/null || echo "${1:-0}"; }
+
+# "500k" -> bytes ; "skip" -> the string skip
+to_bytes() {
+  local v=${1// /}; v=${v,,}
+  [[ $v == skip || $v == 0 ]] && { echo skip; return; }
+  case $v in
+    *k) echo $(( ${v%k} * 1024 )) ;;
+    *m) echo $(( ${v%m} * 1024 * 1024 )) ;;
+    *g) echo $(( ${v%g} * 1024 * 1024 * 1024 )) ;;
+    *)  echo "$v" ;;
+  esac
+}
+
+# ---- build the extension -> budget table from the config block -----------
+declare -A EXT_BUDGET EXT_CLASS
+for e in $EXT_IMAGE; do EXT_CLASS[$e]=image; EXT_BUDGET[$e]=$(to_bytes "$BUDGET_IMAGE"); done
+for e in $EXT_VIDEO; do EXT_CLASS[$e]=video; EXT_BUDGET[$e]=$(to_bytes "$BUDGET_VIDEO"); done
+for e in $EXT_AUDIO; do EXT_CLASS[$e]=audio; EXT_BUDGET[$e]=$(to_bytes "$BUDGET_AUDIO"); done
+for e in $EXT_PDF;   do EXT_CLASS[$e]=pdf;   EXT_BUDGET[$e]=$(to_bytes "$BUDGET_PDF");   done
+OTHER_BUDGET=$(to_bytes "$BUDGET_OTHER")
+
+# per-extension overrides win
+while IFS= read -r line; do
+  line=${line%%#*}; [[ -z ${line// /} ]] && continue
+  ext=${line%%=*}; val=${line#*=}
+  ext=${ext// /}; ext=${ext,,}
+  [[ -z $ext ]] && continue
+  EXT_BUDGET[$ext]=$(to_bytes "$val")
+  [[ -n ${EXT_CLASS[$ext]:-} ]] || EXT_CLASS[$ext]=other
+done <<< "$BUDGET_OVERRIDES"
+
+budget_for() { local e=${1,,}; echo "${EXT_BUDGET[$e]:-$OTHER_BUDGET}"; }
+class_for()  { local e=${1,,}; echo "${EXT_CLASS[$e]:-other}"; }
+
+# ------------------------------- generators -------------------------------
+# Each: <src> <out> <limit-bytes>  -> 0 with a fitting file at <out>, else 1.
+
+make_image_proxy() {
+  local src=$1 out=$2 limit=$3 dim q sz frames
+  local -a pre=(-auto-orient)
+  (( STRIP_EXIF )) && pre+=(-strip)
+  # animated GIFs need every frame handled, not just the first
+  frames=$(magick identify -format '%n\n' "$src" 2>/dev/null | head -1)
+  [[ ${frames:-1} =~ ^[0-9]+$ ]] || frames=1
+
+  while read -r dim q; do
+    [[ -z ${dim:-} ]] && continue
+    (( dim > MAX_EDGE_IMAGE )) && dim=$MAX_EDGE_IMAGE
+    if (( frames > 1 )); then
+      magick "$src" -coalesce -resize "${dim}x${dim}>" -layers Optimize \
+             "$out" 2>/dev/null || return 1
+    else
+      magick "$src" "${pre[@]}" -resize "${dim}x${dim}>" -quality "$q" \
+             -interlace Plane -sampling-factor 4:2:0 "$out" 2>/dev/null || return 1
+    fi
+    sz=$(stat -c%s "$out" 2>/dev/null) || return 1
+    (( sz <= limit )) && return 0
+  done <<< "$LADDER_IMAGE"
+
+  # exact-size finisher for JPEG, if installed
+  if need jpegoptim && [[ ${src##*.} =~ ^([jJ][pP][eE]?[gG])$ ]]; then
+    jpegoptim --quiet --strip-all --size=$(( limit / 1024 ))k "$out" 2>/dev/null
+    sz=$(stat -c%s "$out" 2>/dev/null) && (( sz <= limit )) && return 0
+  fi
+  return 1
+}
+
+make_video_proxy() {
+  local src=$1 out=$2 limit=$3 dim crf ab sz
+  while read -r dim crf ab; do
+    [[ -z ${dim:-} ]] && continue
+    (( dim > MAX_EDGE_VIDEO )) && dim=$MAX_EDGE_VIDEO
+    ffmpeg -nostdin -y -loglevel error -i "$src" \
+           -vf "scale='min($dim,iw)':-2" -c:v libx264 -crf "$crf" -preset veryfast \
+           -c:a aac -b:a "${ab}k" -movflags +faststart "$out" 2>/dev/null || return 1
+    sz=$(stat -c%s "$out" 2>/dev/null) || return 1
+    (( sz <= limit )) && return 0
+  done <<< "$LADDER_VIDEO"
+  return 1
+}
+
+make_audio_proxy() {
+  local src=$1 out=$2 limit=$3 kbps sz
+  while read -r kbps; do
+    [[ -z ${kbps// /} ]] && continue
+    ffmpeg -nostdin -y -loglevel error -i "$src" \
+           -c:a aac -b:a "${kbps// /}k" "$out" 2>/dev/null || return 1
+    sz=$(stat -c%s "$out" 2>/dev/null) || return 1
+    (( sz <= limit )) && return 0
+  done <<< "$LADDER_AUDIO"
+  return 1
+}
+
+make_pdf_proxy() {
+  local src=$1 out=$2 limit=$3 preset sz
+  for preset in /ebook /screen; do
+    gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS="$preset" \
+       -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages=true \
+       -sOutputFile="$out" "$src" 2>/dev/null || return 1
+    sz=$(stat -c%s "$out" 2>/dev/null) || return 1
+    (( sz <= limit )) && return 0
+  done
+  return 1
+}
+
+proxy_is_valid() {
+  case $(class_for "${1##*.}") in
+    video|audio) ffprobe -v error -i "$1" >/dev/null 2>&1 ;;
+    pdf)         [[ $(head -c4 "$1") == "%PDF" ]] ;;
+    *)           magick identify "$1" >/dev/null 2>&1 ;;
+  esac
+}
+
+# --------------------------------- worker ---------------------------------
+# Ordering is deliberate: build proxy -> validate -> archive original ->
+# verify archived bytes -> install proxy. Both copies exist throughout, and
+# every failure path rolls back.
+process_one() {
+  local src=$1
+  local rel=${src#"$ATTACH_DIR"/}          # preserved in the archive
+  local ext=${src##*.}
+  local archived="$ORIGINALS_DIR/$rel"
+  local tmpf="$TMP/w$BASHPID.$RANDOM.$ext"
+
+  if [[ -e $archived ]]; then
+    printf 'skip-done\t%s\n' "$rel"; return 0
+  fi
+
+  local osz; osz=$(stat -c%s "$src" 2>/dev/null) || return 0
+  local limit; limit=$(budget_for "$ext")
+  [[ $limit == skip ]] && { printf 'skip-type\t%s\t%s\n' "$rel" "$osz"; return 0; }
+  (( osz <= limit )) && return 0
+
+  local ok=1
+  case $(class_for "$ext") in
+    image) make_image_proxy "$src" "$tmpf" "$limit" && ok=0 ;;
+    video) make_video_proxy "$src" "$tmpf" "$limit" && ok=0 ;;
+    audio) make_audio_proxy "$src" "$tmpf" "$limit" && ok=0 ;;
+    pdf)   make_pdf_proxy   "$src" "$tmpf" "$limit" && ok=0 ;;
+    *)     printf 'skip-type\t%s\t%s\n' "$rel" "$osz"; return 0 ;;
+  esac
+
+  if (( ok != 0 )) || [[ ! -s $tmpf ]]; then
+    rm -f "$tmpf"; printf 'fail-budget\t%s\t%s\n' "$rel" "$osz"; return 0
+  fi
+  if ! proxy_is_valid "$tmpf"; then
+    rm -f "$tmpf"; printf 'fail-invalid\t%s\t%s\n' "$rel" "$osz"; return 0
+  fi
+  local nsz; nsz=$(stat -c%s "$tmpf")
+  if (( nsz >= osz )); then
+    rm -f "$tmpf"; printf 'skip-nogain\t%s\t%s\n' "$rel" "$osz"; return 0
+  fi
+
+  mkdir -p "$(dirname "$archived")"
+  if ! mv -n "$src" "$archived"; then
+    rm -f "$tmpf"; printf 'fail-archive\t%s\n' "$rel"; return 0
+  fi
+  if [[ $(stat -c%s "$archived") != "$osz" ]]; then
+    mv -n "$archived" "$src"; rm -f "$tmpf"
+    printf 'fail-archive-verify\t%s\n' "$rel"; return 0
+  fi
+  if ! mv "$tmpf" "$src"; then
+    mv -n "$archived" "$src"; rm -f "$tmpf"
+    printf 'fail-install\t%s\n' "$rel"; return 0
+  fi
+
+  flock "$LOG" -c \
+    "printf '%s\t%s\t%s\t%s\n' \"$rel\" \"$osz\" \"$nsz\" \"\$(date -Is)\" >> \"$LOG\""
+  printf 'ok\t%s\t%s\t%s\n' "$rel" "$osz" "$nsz"
+}
+
+# --------------------------------- restore --------------------------------
+if [[ $MODE == restore ]]; then
+  [[ -d $ORIGINALS_DIR ]] || { echo "no originals dir: $ORIGINALS_DIR" >&2; exit 1; }
+  n=0
+  if [[ $RESTORE_TARGET == all ]]; then
+    while IFS= read -r -d '' o; do
+      rel=${o#"$ORIGINALS_DIR"/}
+      if (( APPLY )); then mkdir -p "$(dirname "$ATTACH_DIR/$rel")"; mv -f "$o" "$ATTACH_DIR/$rel"
+      else echo "would restore: $rel"; fi
+      n=$((n+1))
+    done < <(find "$ORIGINALS_DIR" -type f -not -path '*/.tmp/*' -not -name '.proxy-log.tsv' -print0)
+  else
+    o="$ORIGINALS_DIR/$RESTORE_TARGET"
+    [[ -f $o ]] || { echo "not archived: $RESTORE_TARGET" >&2; exit 1; }
+    if (( APPLY )); then mkdir -p "$(dirname "$ATTACH_DIR/$RESTORE_TARGET")"
+                         mv -f "$o" "$ATTACH_DIR/$RESTORE_TARGET"
+    else echo "would restore: $RESTORE_TARGET"; fi
+    n=1
+  fi
+  (( APPLY )) && echo "restored $n file(s) into $ATTACH_DIR" \
+              || echo "$n file(s) would be restored — add --apply"
+  exit 0
+fi
+
+# ---------------------------------- verify --------------------------------
+if [[ $MODE == verify ]]; then
+  missing=0; checked=0
+  while IFS= read -r name; do
+    [[ -z $name ]] && continue
+    checked=$((checked+1))
+    find "$ATTACH_DIR" -name "$name" -print -quit 2>/dev/null | grep -q . && continue
+    find "$VAULT_DIR" -name "$name" -not -path '*/.trash/*' -print -quit 2>/dev/null | grep -q . \
+      || { echo "BROKEN: $name"; missing=$((missing+1)); }
+  done < <(
+    grep -rIoh --include='*.md' -E '!\[\[[^]|#^]+' "$VAULT_DIR" 2>/dev/null \
+      | sed 's/^!\[\[//' \
+      | grep -iE '\.(jpg|jpeg|png|gif|webp|svg|pdf|mp4|mov|heic|mp3|m4a|zip|apkg)$' \
+      | sed 's|.*/||' | sort -u
+  )
+  echo "checked $checked referenced assets — $missing broken"
+  exit $(( missing > 0 ? 1 : 0 ))
+fi
+
+# ----------------------------------- proxy --------------------------------
+need magick || { echo "required: imagemagick" >&2; exit 1; }
+need gs      || echo "note: ghostscript missing — PDFs will be skipped" >&2
+need ffmpeg  || echo "note: ffmpeg missing — video/audio will be skipped" >&2
+[[ -d $ATTACH_DIR ]] || { echo "attachments dir not found: $ATTACH_DIR" >&2; exit 1; }
+
+# Never let originals sit inside the vault: it reintroduces link ambiguity.
+_vr=$(realpath -m "$VAULT_DIR"); _or=$(realpath -m "$ORIGINALS_DIR")
+if [[ $_or == "$_vr" || $_or == "$_vr"/* ]]; then
+  echo "REFUSING: originals dir is inside the vault ($ORIGINALS_DIR)." >&2
+  echo "Same-named files inside the vault make every bare wikilink ambiguous." >&2
+  exit 1
+fi
+
+mkdir -p "$ORIGINALS_DIR" "$TMP"
+[[ -f $LOG ]] || printf 'file\torig_bytes\tproxy_bytes\tts\n' > "$LOG"
+
+DEPTH=(); (( RECURSIVE )) || DEPTH=(-maxdepth 1)
+mapfile -d '' ALL < <(find "$ATTACH_DIR" "${DEPTH[@]}" -type f -print0 2>/dev/null)
+
+# select only files over their own type's budget
+CAND=(); cand_bytes=0
+declare -A CLS_N CLS_B
+for f in "${ALL[@]}"; do
+  ext=${f##*.}; lim=$(budget_for "$ext"); cls=$(class_for "$ext")
+  [[ $lim == skip ]] && continue
+  sz=$(stat -c%s "$f" 2>/dev/null) || continue
+  (( sz <= lim )) && continue
+  CAND+=("$f"); cand_bytes=$(( cand_bytes + sz ))
+  CLS_N[$cls]=$(( ${CLS_N[$cls]:-0} + 1 ))
+  CLS_B[$cls]=$(( ${CLS_B[$cls]:-0} + sz ))
+done
+
+echo "vault      : $VAULT_DIR"
+echo "attachments: $ATTACH_DIR  ($( ((RECURSIVE)) && echo recursive || echo "flat, top level only"))"
+echo "originals  : $ORIGINALS_DIR"
+echo "scanned    : ${#ALL[@]} files"
+echo "over budget: ${#CAND[@]} files, $(human $cand_bytes)"
+echo
+printf '  %-7s %-8s %7s  %10s\n' CLASS BUDGET FILES SIZE
+for c in image video audio pdf other; do
+  case $c in
+    image) b=$BUDGET_IMAGE ;; video) b=$BUDGET_VIDEO ;; audio) b=$BUDGET_AUDIO ;;
+    pdf)   b=$BUDGET_PDF   ;; other) b=$BUDGET_OTHER ;;
+  esac
+  printf '  %-7s %-8s %7s  %10s\n' "$c" "$b" "${CLS_N[$c]:-0}" "$(human ${CLS_B[$c]:-0})"
+done
+
+if (( APPLY == 0 )); then
+  echo
+  echo "DRY RUN — nothing written. Re-run with --apply."
+  echo "already archived (will be skipped): $(find "$ORIGINALS_DIR" -type f -not -path '*/.tmp/*' -not -name '.proxy-log.tsv' 2>/dev/null | wc -l)"
+  exit 0
+fi
+(( ${#CAND[@]} )) || { echo; echo "nothing over budget."; exit 0; }
+
+RUNOUT="$TMP/run.out"; : > "$RUNOUT"
+echo
+active=0; done_n=0
+for f in "${CAND[@]}"; do
+  while (( active >= JOBS )); do wait -n 2>/dev/null || true; active=$((active-1)); done
+  process_one "$f" >> "$RUNOUT" &
+  active=$((active+1)); done_n=$((done_n+1))
+  (( done_n % 25 == 0 )) && printf '\r  processing %d/%d ...' "$done_n" "${#CAND[@]}" >&2
+done
+wait
+printf '\r  processing %d/%d — done\n\n' "${#CAND[@]}" "${#CAND[@]}" >&2
+
+echo "--- results ---"
+awk -F'\t' '{c[$1]++} END {for (k in c) printf "  %-20s %d\n", k, c[k]}' "$RUNOUT" | sort
+awk -F'\t' '$1=="ok" {o+=$3; p+=$4} END {
+  if (o) printf "\nreclaimed %.2f GB   (%.2f GB -> %.2f GB)\n",
+    (o-p)/1073741824, o/1073741824, p/1073741824 }' "$RUNOUT"
+
+if grep -q '^fail' "$RUNOUT"; then
+  echo; echo "left untouched in the vault (could not fit budget):"
+  grep '^fail' "$RUNOUT" | awk -F'\t' '{printf "  %-14s %s\n", $1, $2}' | head -20
+  echo "  (full list: grep ^fail $RUNOUT)"
+fi
+rmdir "$TMP" 2>/dev/null
+echo; echo "Next: vault-proxy --verify"

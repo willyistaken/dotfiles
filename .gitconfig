@@ -1,0 +1,7 @@
+[user]
+	email = willyhlchan@gmail.com
+	name = willyistaken
+[core]
+	editor = /usr/bin/nvim
+[init]
+	defaultBranch = main

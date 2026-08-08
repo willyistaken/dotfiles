@@ -1,0 +1,12 @@
+{
+  "sudoloop": true,
+  "buildDir": "/tmp/yay",
+  "editor": "",
+  "cleanMenu": false,
+  "diffMenu": false,
+  "editMenu": false,
+  "useAsk": false,
+  "answerClean": "All",
+  "answerDiff": "None"
+}
+

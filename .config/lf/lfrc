@@ -1,0 +1,154 @@
+# interpreter for shell commands
+set shell zsh
+
+# set '-eu' options for shell commands
+# These options are used to have safer shell commands. Option '-e' is used to
+# exit on error and option '-u' is used to give error for unset variables.
+# Option '-f' disables pathname expansion which can be useful when $f, $fs, and
+# $fx variables contain names with '*' or '?' characters. However, this option
+# is used selectively within individual commands as it can be limiting at
+# times.
+set shellopts '-eu'
+
+
+
+# set internal field separator (IFS) to "\n" for shell commands
+# This is useful to automatically split file names in $fs and $fx properly
+# since default file separator used in these variables (i.e. 'filesep' option)
+# is newline. You need to consider the values of these options and create your
+# commands accordingly.
+set ifs "\n"
+
+# leave some space at the top and the bottom of the screen
+set scrolloff 10
+
+# Use the `dim` attribute instead of underline for the cursor in the preview pane
+set cursorpreviewfmt "\033[7;2m"
+
+# use enter for shell commands
+
+# show the result of execution of previous commands
+map ` !true
+
+map . set hidden!
+# execute current file (must be executable)
+map x $$f
+map X !$f
+map d 
+map dd delete
+
+# dedicated keys for file opener actions
+
+# define a custom 'open' command
+# This command is called when current file is not a directory. You may want to
+# use either file extensions and/or mime types here. Below uses an editor for
+# text files and a file opener for the rest.
+#
+#
+
+cmd open ${{
+    # 1. Directly intercept .agda files and launch standalone graphical Emacs
+    if [[ "$f" == *.agda ]]; then
+        for file in $fx; do 
+            nohup emacs "$file" > /dev/null 2> /dev/null & 
+        done
+        exit 0
+    fi
+
+    # 2. Your original MIME detection logic
+    mime_type=$(file --mime-type -Lb "$f")
+    
+    if [[ "$f" == *.lua ]]; then
+        mime_type="text/x-lua"
+    fi
+    if [[ "$f" == *.tex ]]; then
+        mime_type="text/x-tex"
+    fi
+
+    # 3. Your original case statement (unaffected)
+    case $mime_type in
+        text/*)          lf -remote "send $id \$nvim \$fx" ;;
+        application/pdf) for f in $fx; do nohup zathura "$f" > /dev/null 2> /dev/null & done ;;
+        image/*)         for f in $fx; do nohup nsxiv "$f" > /dev/null 2> /dev/null & done ;;
+        video/*)         for f in $fx; do nohup mpv "$f" > /dev/null 2> /dev/null & done ;;
+        *)               for f in $fx; do nohup $OPENER "$f" > /dev/null 2> /dev/null & done ;;
+    esac
+}}
+
+
+map o open $f
+map <enter> open $f
+# mkdir command. See wiki if you want it to select created dir
+map a :push %mkdir<space>
+
+# define a custom 'rename' command without prompt for overwrite
+# cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
+# map r push :rename<space>
+
+# make sure trash folder exists
+# %mkdir -p ~/.trash
+
+# move current file or selected files to trash folder
+# (also see 'man mv' for backup/overwrite options)
+cmd trash %set -f; mv $fx ~/.trash
+
+# define a custom 'delete' command
+# cmd delete ${{
+#     set -f
+#     printf "$fx\n"
+#     printf "delete?[y/n]"
+#     read ans
+#     [ "$ans" = "y" ] && rm -rf $fx
+# }}
+
+# use '<delete>' key for either 'trash' or 'delete' command
+# map <delete> trash
+# map <delete> delete
+
+# extract the current file with the right command
+# (xkcd link: https://xkcd.com/1168/)
+cmd extract ${{
+    set -f
+    case $f in
+        *.tar.bz|*.tar.bz2|*.tbz|*.tbz2) tar xjvf $f;;
+        *.tar.gz|*.tgz) tar xzvf $f;;
+        *.tar.xz|*.txz) tar xJvf $f;;
+        *.zip) unzip $f;;
+        *.rar) unrar x $f;;
+        *.7z) 7z x $f;;
+    esac
+}}
+
+# compress current file or selected files with tar and gunzip
+cmd tar ${{
+    set -f
+    mkdir $1
+    cp -r $fx $1
+    tar czf $1.tar.gz $1
+    rm -rf $1
+}}
+
+# compress current file or selected files with zip
+cmd zip ${{
+    set -f
+    mkdir $1
+    cp -r $fx $1
+    zip -r $1.zip $1
+    rm -rf $1
+}}
+
+cmd fzf_jump ${{
+    #res="$(find * | fzf --header='Jump to location')"
+    res="$(fzf --walker=file,dir,follow,hidden --walker-skip=.git,node_modules,.Trash)"
+    if [ -n "$res" ]; then
+        if [ -d "$res" ]; then
+            cmd="cd"
+        else
+            cmd="select"
+        fi
+        res="$(printf '%s' "$res" | sed 's/\\/\\\\/g;s/"/\\"/g')"
+        lf -remote "send $id $cmd \"$res\""
+    fi
+}}
+map / :fzf_jump
+

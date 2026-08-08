@@ -1,0 +1,32 @@
+#import "@template/homework:1.0.0": *
+
+
+#set text(font: ( (name: "Times New Roman", covers: regex("[A-Za-z0-9.,;:!?()'\u2019]")), "Noto Serif CJK TC"))
+#show: homework.with(
+  class: #,
+  name: "陳澔樂",
+  studentId: "B13902014", 
+  department: #,
+  type: #,
+  num: #,
+  backcolor:rgb(255,255,255),
+  frontcolor:rgb(0,0,0),
+  anonymous: false
+)
+
+#show: show-theorion
+//#set heading(numbering: "1.1")
+//
+//= Table Of Contents
+//#outline(title: none, target: figure.where(kind: "theorem"))
+
+
+
+#question()
+
+
+//  #question(title:"",shift:0,nonum:false)
+//  #part(start:,alpha:false)
+//  #bigbox[]
+// https://typst.app/universe/package/algo/
+// typst fonts

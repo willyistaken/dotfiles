@@ -1,0 +1,34 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/tomorrow_night.toml"
+]
+
+[window]
+
+opacity = 0.8
+
+padding.x = 20
+padding.y = 20
+
+decorations = "Full"
+decorations_theme_variant = "Dark"
+
+[font]
+size = 15.0
+
+[font.bold]
+family = "JetBrainsMonoNerdFont"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMonoNerdFont"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMonoNerdFont"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMonoNerdFont"
+style = "Regular"
+
